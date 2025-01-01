@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools",
+    "pybind11",
+    "nvidia-nccl-cu11 >= 2.14.3",
+    "cmake > 3.27.0"
+]
+build-backend = "setuptools.build_meta"
+[tool.pyright]
+include = ["bmtrain", "tests"]
+defineConstant = { DEBUG = true }
+stubPath = "src/stubs"
+
+reportMissingTypeStubs = false
+reportCallIssue = false
+reportArgumentType = false
+reportInvalidTypeForm = false
+reportPrivateImportUsage=false
+reportOptionalMemberAccess = false
+reportOptionalSubscript = false
+reportMissingImports = false
+reportGeneralTypeIssues = false
+reportAttributeAccessIssue = false
+reportUnboundVariable = false
+reportOperatorIssue = false
+reportIndexIssue = false
+reportOptionalOperand = false
+reportOptionalCall = false
+reportUndefinedVariable = false
+reportReturnType = false
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
+reportAssignmentType = false

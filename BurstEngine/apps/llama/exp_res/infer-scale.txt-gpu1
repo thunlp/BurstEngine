@@ -1,0 +1,7 @@
+bw,dim,gpus,seqlen,method,mem,time,toks,params,std
+low,13b,1,16384,burst+flash,26.6,3.8637,4240.5,13.02,0.0
+low,13b,1,16384,tp+sp+flash,NaN,NaN,NaN,NaN,NaN
+low,13b,1,32768,burst+flash,28.92,11.2257,2919.02,13.02,0.0
+low,13b,1,32768,tp+sp+flash,NaN,NaN,NaN,NaN,NaN
+low,13b,1,65536,burst+flash,33.56,36.3532,1802.76,13.02,0.02
+low,13b,1,65536,tp+sp+flash,NaN,NaN,NaN,NaN,NaN

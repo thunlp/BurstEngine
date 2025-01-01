@@ -1,0 +1,9 @@
+remote_host cent2
+remote_path  /home/test/test01/sa/workspace/burst_exp
+local_path    /Users/tachicoma/projects/burst_exp/
+ignore_dotfiles 0
+auto_sync_up    1
+remote_options -var
+remote_or_local remote
+sleep_before_sync 0
+backend sftp

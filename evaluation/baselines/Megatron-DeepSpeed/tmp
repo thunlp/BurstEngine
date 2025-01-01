@@ -1,0 +1,401 @@
+----------------------------mapping list----------------------------
+mega-ds: ('language_model.embedding.word_embeddings.weight', torch.Size([0]))<--hf: ('model.embed_tokens.weight',)  [0:32000,:]  of torch.Size([32000, 4096])
+mega-ds:('language_model.encoder.layers.0.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.0.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.0.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.0.self_attn.q_proj.weight', 'model.layers.0.self_attn.k_proj.weight', 'model.layers.0.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.0.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.0.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.0.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.0.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.0.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.0.mlp.gate_proj.weight', 'model.layers.0.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.0.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.0.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.1.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.1.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.1.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.1.self_attn.q_proj.weight', 'model.layers.1.self_attn.k_proj.weight', 'model.layers.1.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.1.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.1.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.1.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.1.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.1.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.1.mlp.gate_proj.weight', 'model.layers.1.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.1.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.1.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.2.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.2.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.2.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.2.self_attn.q_proj.weight', 'model.layers.2.self_attn.k_proj.weight', 'model.layers.2.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.2.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.2.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.2.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.2.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.2.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.2.mlp.gate_proj.weight', 'model.layers.2.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.2.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.2.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.3.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.3.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.3.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.3.self_attn.q_proj.weight', 'model.layers.3.self_attn.k_proj.weight', 'model.layers.3.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.3.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.3.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.3.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.3.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.3.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.3.mlp.gate_proj.weight', 'model.layers.3.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.3.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.3.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.4.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.4.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.4.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.4.self_attn.q_proj.weight', 'model.layers.4.self_attn.k_proj.weight', 'model.layers.4.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.4.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.4.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.4.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.4.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.4.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.4.mlp.gate_proj.weight', 'model.layers.4.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.4.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.4.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.5.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.5.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.5.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.5.self_attn.q_proj.weight', 'model.layers.5.self_attn.k_proj.weight', 'model.layers.5.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.5.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.5.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.5.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.5.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.5.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.5.mlp.gate_proj.weight', 'model.layers.5.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.5.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.5.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.6.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.6.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.6.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.6.self_attn.q_proj.weight', 'model.layers.6.self_attn.k_proj.weight', 'model.layers.6.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.6.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.6.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.6.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.6.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.6.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.6.mlp.gate_proj.weight', 'model.layers.6.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.6.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.6.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.7.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.7.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.7.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.7.self_attn.q_proj.weight', 'model.layers.7.self_attn.k_proj.weight', 'model.layers.7.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.7.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.7.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.7.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.7.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.7.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.7.mlp.gate_proj.weight', 'model.layers.7.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.7.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.7.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.8.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.8.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.8.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.8.self_attn.q_proj.weight', 'model.layers.8.self_attn.k_proj.weight', 'model.layers.8.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.8.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.8.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.8.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.8.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.8.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.8.mlp.gate_proj.weight', 'model.layers.8.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.8.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.8.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.9.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.9.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.9.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.9.self_attn.q_proj.weight', 'model.layers.9.self_attn.k_proj.weight', 'model.layers.9.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.9.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.9.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.9.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.9.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.9.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.9.mlp.gate_proj.weight', 'model.layers.9.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.9.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.9.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.10.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.10.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.10.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.10.self_attn.q_proj.weight', 'model.layers.10.self_attn.k_proj.weight', 'model.layers.10.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.10.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.10.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.10.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.10.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.10.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.10.mlp.gate_proj.weight', 'model.layers.10.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.10.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.10.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.11.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.11.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.11.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.11.self_attn.q_proj.weight', 'model.layers.11.self_attn.k_proj.weight', 'model.layers.11.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.11.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.11.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.11.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.11.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.11.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.11.mlp.gate_proj.weight', 'model.layers.11.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.11.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.11.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.12.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.12.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.12.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.12.self_attn.q_proj.weight', 'model.layers.12.self_attn.k_proj.weight', 'model.layers.12.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.12.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.12.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.12.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.12.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.12.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.12.mlp.gate_proj.weight', 'model.layers.12.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.12.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.12.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.13.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.13.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.13.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.13.self_attn.q_proj.weight', 'model.layers.13.self_attn.k_proj.weight', 'model.layers.13.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.13.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.13.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.13.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.13.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.13.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.13.mlp.gate_proj.weight', 'model.layers.13.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.13.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.13.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.14.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.14.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.14.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.14.self_attn.q_proj.weight', 'model.layers.14.self_attn.k_proj.weight', 'model.layers.14.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.14.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.14.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.14.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.14.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.14.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.14.mlp.gate_proj.weight', 'model.layers.14.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.14.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.14.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.15.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.15.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.15.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.15.self_attn.q_proj.weight', 'model.layers.15.self_attn.k_proj.weight', 'model.layers.15.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.15.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.15.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.15.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.15.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.15.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.15.mlp.gate_proj.weight', 'model.layers.15.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.15.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.15.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.16.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.16.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.16.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.16.self_attn.q_proj.weight', 'model.layers.16.self_attn.k_proj.weight', 'model.layers.16.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.16.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.16.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.16.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.16.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.16.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.16.mlp.gate_proj.weight', 'model.layers.16.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.16.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.16.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.17.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.17.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.17.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.17.self_attn.q_proj.weight', 'model.layers.17.self_attn.k_proj.weight', 'model.layers.17.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.17.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.17.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.17.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.17.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.17.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.17.mlp.gate_proj.weight', 'model.layers.17.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.17.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.17.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.18.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.18.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.18.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.18.self_attn.q_proj.weight', 'model.layers.18.self_attn.k_proj.weight', 'model.layers.18.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.18.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.18.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.18.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.18.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.18.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.18.mlp.gate_proj.weight', 'model.layers.18.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.18.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.18.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.19.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.19.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.19.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.19.self_attn.q_proj.weight', 'model.layers.19.self_attn.k_proj.weight', 'model.layers.19.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.19.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.19.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.19.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.19.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.19.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.19.mlp.gate_proj.weight', 'model.layers.19.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.19.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.19.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.20.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.20.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.20.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.20.self_attn.q_proj.weight', 'model.layers.20.self_attn.k_proj.weight', 'model.layers.20.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.20.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.20.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.20.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.20.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.20.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.20.mlp.gate_proj.weight', 'model.layers.20.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.20.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.20.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.21.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.21.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.21.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.21.self_attn.q_proj.weight', 'model.layers.21.self_attn.k_proj.weight', 'model.layers.21.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.21.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.21.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.21.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.21.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.21.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.21.mlp.gate_proj.weight', 'model.layers.21.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.21.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.21.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.22.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.22.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.22.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.22.self_attn.q_proj.weight', 'model.layers.22.self_attn.k_proj.weight', 'model.layers.22.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.22.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.22.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.22.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.22.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.22.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.22.mlp.gate_proj.weight', 'model.layers.22.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.22.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.22.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.23.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.23.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.23.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.23.self_attn.q_proj.weight', 'model.layers.23.self_attn.k_proj.weight', 'model.layers.23.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.23.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.23.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.23.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.23.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.23.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.23.mlp.gate_proj.weight', 'model.layers.23.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.23.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.23.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.24.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.24.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.24.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.24.self_attn.q_proj.weight', 'model.layers.24.self_attn.k_proj.weight', 'model.layers.24.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.24.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.24.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.24.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.24.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.24.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.24.mlp.gate_proj.weight', 'model.layers.24.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.24.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.24.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.25.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.25.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.25.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.25.self_attn.q_proj.weight', 'model.layers.25.self_attn.k_proj.weight', 'model.layers.25.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.25.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.25.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.25.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.25.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.25.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.25.mlp.gate_proj.weight', 'model.layers.25.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.25.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.25.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.26.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.26.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.26.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.26.self_attn.q_proj.weight', 'model.layers.26.self_attn.k_proj.weight', 'model.layers.26.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.26.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.26.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.26.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.26.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.26.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.26.mlp.gate_proj.weight', 'model.layers.26.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.26.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.26.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.27.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.27.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.27.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.27.self_attn.q_proj.weight', 'model.layers.27.self_attn.k_proj.weight', 'model.layers.27.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.27.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.27.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.27.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.27.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.27.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.27.mlp.gate_proj.weight', 'model.layers.27.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.27.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.27.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.28.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.28.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.28.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.28.self_attn.q_proj.weight', 'model.layers.28.self_attn.k_proj.weight', 'model.layers.28.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.28.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.28.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.28.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.28.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.28.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.28.mlp.gate_proj.weight', 'model.layers.28.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.28.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.28.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.29.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.29.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.29.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.29.self_attn.q_proj.weight', 'model.layers.29.self_attn.k_proj.weight', 'model.layers.29.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.29.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.29.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.29.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.29.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.29.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.29.mlp.gate_proj.weight', 'model.layers.29.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.29.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.29.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.30.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.30.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.30.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.30.self_attn.q_proj.weight', 'model.layers.30.self_attn.k_proj.weight', 'model.layers.30.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.30.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.30.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.30.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.30.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.30.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.30.mlp.gate_proj.weight', 'model.layers.30.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.30.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.30.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.layers.31.input_layernorm.weight', torch.Size([0]))<--hf('model.layers.31.input_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.31.self_attention.query_key_value.weight', torch.Size([0]))<--hf('model.layers.31.self_attn.q_proj.weight', 'model.layers.31.self_attn.k_proj.weight', 'model.layers.31.self_attn.v_proj.weight')  cat q,k,v [3968:4096,:]  of q,k,vtorch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.31.self_attention.dense.weight', torch.Size([0]))<--hf('model.layers.31.self_attn.o_proj.weight',)  [:,0:4096]  of torch.Size([4096, 4096])
+mega-ds:('language_model.encoder.layers.31.post_attention_layernorm.weight', torch.Size([0]))<--hf('model.layers.31.post_attention_layernorm.weight',)  torch.Size([4096])
+mega-ds:('language_model.encoder.layers.31.mlp.dense_h_to_4h.weight', torch.Size([0]))<--hf('model.layers.31.mlp.gate_proj.weight', 'model.layers.31.mlp.up_proj.weight')  cat gate,up [0:11008,:]  of gate,uptorch.Size([11008, 4096])
+mega-ds:('language_model.encoder.layers.31.mlp.dense_4h_to_h.weight', torch.Size([0]))<--hf('model.layers.31.mlp.down_proj.weight',)  [:,0:11008]  of torch.Size([4096, 11008])
+mega-ds:('language_model.encoder.final_layernorm.weight', torch.Size([0]))<--hf('model.norm.weight',)  torch.Size([4096])
+mega-ds: ('language_model.output_layer.weight', torch.Size([0]))<--hf: ('lm_head.weight',)  [0:32000,:]  of torch.Size([32000, 4096])
+> learning rate decay style: cosine
+before deepspeed init
+[2024-07-24 14:22:47,447] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.4, git-hash=unknown, git-branch=unknown
+[2024-07-24 14:22:47,455] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-07-24 14:22:47,456] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-07-24 14:22:47,456] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-07-24 14:22:47,461] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedAdam
+[2024-07-24 14:22:47,461] [INFO] [logging.py:96:log_dist] [Rank 0] Creating BF16 optimizer
+[2024-07-24 14:22:47,506] [INFO] [utils.py:781:see_memory_usage] begin bf16_optimizer
+[2024-07-24 14:22:47,507] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,507] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.64 GB, percent = 13.2%
+[2024-07-24 14:22:47,544] [INFO] [utils.py:781:see_memory_usage] before initializing group 0
+[2024-07-24 14:22:47,544] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,544] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.64 GB, percent = 13.2%
+[2024-07-24 14:22:47,583] [INFO] [utils.py:781:see_memory_usage] after initializing group 0
+[2024-07-24 14:22:47,583] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,583] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.64 GB, percent = 13.2%
+[2024-07-24 14:22:47,620] [INFO] [utils.py:781:see_memory_usage] before initialize_optimizer
+[2024-07-24 14:22:47,621] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,621] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.64 GB, percent = 13.2%
+[2024-07-24 14:22:47,658] [INFO] [utils.py:781:see_memory_usage] end initialize_optimizer
+[2024-07-24 14:22:47,659] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,659] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.65 GB, percent = 13.2%
+[2024-07-24 14:22:47,696] [INFO] [utils.py:781:see_memory_usage] end bf16_optimizer
+[2024-07-24 14:22:47,696] [INFO] [utils.py:782:see_memory_usage] MA 1.58 GB         Max_MA 1.58 GB         CA 6.45 GB         Max_CA 6 GB
+[2024-07-24 14:22:47,696] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 132.65 GB, percent = 13.2%
+[2024-07-24 14:22:47,696] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = BF16_Optimizer
+[2024-07-24 14:22:47,697] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-07-24 14:22:47,697] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = <megatron.optimizer_param_scheduler.OptimizerParamScheduler object at 0x7f39bc314160>
+[2024-07-24 14:22:47,697] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2024-07-24 14:22:47,697] [INFO] [config.py:997:print] DeepSpeedEngine configuration:
+[2024-07-24 14:22:47,697] [INFO] [config.py:1001:print]   activation_checkpointing_config  {
+    "partition_activations": false,
+    "contiguous_memory_optimization": false,
+    "cpu_checkpointing": false,
+    "number_checkpoints": null,
+    "synchronize_checkpoint_boundary": false,
+    "profile": false
+}
+[2024-07-24 14:22:47,697] [INFO] [config.py:1001:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-07-24 14:22:47,697] [INFO] [config.py:1001:print]   amp_enabled .................. False
+[2024-07-24 14:22:47,697] [INFO] [config.py:1001:print]   amp_params ................... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   autotuning_config ............ {
+    "enabled": false,
+    "start_step": null,
+    "end_step": null,
+    "metric_path": null,
+    "arg_mappings": null,
+    "metric": "throughput",
+    "model_info": null,
+    "results_dir": "autotuning_results",
+    "exps_dir": "autotuning_exps",
+    "overwrite": true,
+    "fast": true,
+    "start_profile_step": 3,
+    "end_profile_step": 5,
+    "tuner_type": "gridsearch",
+    "tuner_early_stopping": 5,
+    "tuner_num_trials": 50,
+    "model_info_path": null,
+    "mp_size": 1,
+    "max_train_batch_size": null,
+    "min_train_batch_size": 1,
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03,
+    "min_train_micro_batch_size_per_gpu": 1,
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   bfloat16_enabled ............. True
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   bfloat16_immediate_grad_update  False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   checkpoint_parallel_write_pipeline  False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   checkpoint_tag_validation_enabled  True
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   checkpoint_tag_validation_fail  False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f39bc3146d0>
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   communication_data_type ...... None
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   curriculum_enabled_legacy .... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   curriculum_params_legacy ..... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   data_efficiency_enabled ...... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   dataloader_drop_last ......... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   disable_allgather ............ False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   dump_state ................... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   dynamic_loss_scale_args ...... None
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_enabled ........... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_gas_boundary_resolution  1
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_layer_num ......... 0
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_max_iter .......... 100
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_stability ......... 1e-06
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_tol ............... 0.01
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   eigenvalue_verbose ........... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   elasticity_enabled ........... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   flops_profiler_config ........ {
+    "enabled": false,
+    "recompute_fwd_factor": 0.0,
+    "profile_step": 1,
+    "module_depth": -1,
+    "top_modules": 1,
+    "detailed": true,
+    "output_file": null
+}
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   fp16_auto_cast ............... None
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   fp16_enabled ................. False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   fp16_master_weights_and_gradients  False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   global_rank .................. 0
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   grad_accum_dtype ............. None
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   gradient_accumulation_steps .. 2
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   gradient_clipping ............ 0.0
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   gradient_predivide_factor .... 1.0
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   graph_harvesting ............. False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   initial_dynamic_scale ........ 1
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   load_universal_checkpoint .... False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   loss_scale ................... 1.0
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   memory_breakdown ............. False
+[2024-07-24 14:22:47,698] [INFO] [config.py:1001:print]   mics_hierarchial_params_gather  False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   mics_shard_size .............. -1
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   nebula_config ................ {
+    "enabled": false,
+    "persistent_storage_path": null,
+    "persistent_time_interval": 100,
+    "num_of_version_in_retention": 2,
+    "enable_nebula_load": true,
+    "load_path": null
+}
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   optimizer_legacy_fusion ...... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   optimizer_name ............... None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   optimizer_params ............. None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   pld_enabled .................. False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   pld_params ................... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   prescale_gradients ........... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   scheduler_name ............... None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   scheduler_params ............. None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   seq_parallel_communication_data_type  torch.float32
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   sparse_attention ............. None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   sparse_gradients_enabled ..... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   steps_per_print .............. 100
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   timers_config ................ enabled=True synchronized=True
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   train_batch_size ............. 256
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   train_micro_batch_size_per_gpu  16
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   use_data_before_expert_parallel_  False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   use_node_local_storage ....... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   wall_clock_breakdown ......... False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   weight_quantization_config ... None
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   world_size ................... 8
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   zero_allow_untested_optimizer  False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500,000,000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500,000,000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   zero_enabled ................. False
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   zero_force_ds_cpu_optimizer .. True
+[2024-07-24 14:22:47,699] [INFO] [config.py:1001:print]   zero_optimization_stage ...... 0
+[2024-07-24 14:22:47,699] [INFO] [config.py:987:print_user_config]   json = {
+    "train_batch_size": 256,
+    "train_micro_batch_size_per_gpu": 16,
+    "steps_per_print": 100,
+    "zero_optimization": {
+        "stage": 0
+    },
+    "bf16": {
+        "enabled": true
+    }
+}
+after deepspeed init
+mega-ds checkpoint will be saved in ./llama-7b-mega-ds-zero3-8gpus-fp16
+saving checkpoint at iteration       0 to ./llama-7b-mega-ds-zero3-8gpus-fp16
+[2024-07-24 14:22:47,700] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step0 is about to be saved!
+[2024-07-24 14:22:47,704] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/mp_rank_00_model_states.pt
+[2024-07-24 14:22:47,704] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/mp_rank_00_model_states.pt...
+[2024-07-24 14:22:47,712] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/mp_rank_00_model_states.pt.
+[2024-07-24 14:22:47,713] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,713] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,713] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,713] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,713] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,714] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,714] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,714] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt...
+[2024-07-24 14:22:47,714] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,715] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,715] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_7_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,715] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,716] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_4_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,716] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,716] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_2_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,716] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,716] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_6_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,717] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,717] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,717] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_5_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,717] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,717] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,717] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_3_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,717] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+[2024-07-24 14:22:47,718] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt.
+[2024-07-24 14:22:47,718] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved ./llama-7b-mega-ds-zero3-8gpus-fp16/global_step0/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt
+[2024-07-24 14:22:47,718] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step0 is ready now!
+  successfully saved checkpoint at iteration       0 to ./llama-7b-mega-ds-zero3-8gpus-fp16
+save checkpoint completed
+(pt113) hanxv@g3028:~/workspace/Megatron-DeepSpeed/script$

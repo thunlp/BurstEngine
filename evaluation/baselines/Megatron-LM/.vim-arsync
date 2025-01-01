@@ -1,0 +1,12 @@
+auto_sync_up 1
+ignore_dotfiles 0
+ignore_path ["ts/", ".git", "*.pt", "*.nsys-rep", "output/", "megatron/fused_kernels/build", "llama-7b*", "/ckpt/", "tensorboard*", "megatron/data/", "data/", "**/__pycache__/"]
+local_options -var
+local_path /Users/tachicoma/projects/Megatron-LM/
+remote_host cent
+rmote_options -vazr
+remote_or_local remote
+remote_path /home/test/test01/sa/workspace/Megatron-LM
+remote_port '0'
+rsync_flags []
+backend sftp

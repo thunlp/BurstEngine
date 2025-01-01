@@ -1,0 +1,8 @@
+remote_host cent
+remote_port '0'
+remote_path  /home/test/test01/sa/workspace/BurstAttn
+local_path    /Users/tachicoma/projects/Burst-Attention/
+ignore_dotfiles 0
+auto_sync_up    1
+remote_or_local remote
+sleep_before_sync 0

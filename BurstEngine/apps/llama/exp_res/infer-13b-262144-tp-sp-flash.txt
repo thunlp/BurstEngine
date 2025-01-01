@@ -1,0 +1,3 @@
+bw,dim,gpus,seqlen,method,mem,time,toks,params,std
+low,13b,8,1024,ring,24.6,0.1906,5371.35,13.02,0.0
+low,13b,8,1024,burst,24.6,0.2207,4639.58,13.02,0.0

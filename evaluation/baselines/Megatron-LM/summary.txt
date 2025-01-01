@@ -1,0 +1,32 @@
+[*******final summary********] datetime: 2024-09-19 14:31:23 
+[MFU	30.78] datetime: 2024-09-19 14:31:23 
+[TGS	215.62] datetime: 2024-09-19 14:31:23 
+[*******summary end********] datetime: 2024-09-19 14:31:23 
+[*******final summary********] datetime: 2024-09-19 14:32:17 
+[MFU	75.02] datetime: 2024-09-19 14:32:17 
+[TGS	305.17] datetime: 2024-09-19 14:32:17 
+[*******summary end********] datetime: 2024-09-19 14:32:17 
+[*******final summary********] datetime: 2024-09-19 14:33:52 
+[MFU	110.61] datetime: 2024-09-19 14:33:52 
+[TGS	244.72] datetime: 2024-09-19 14:33:52 
+[*******summary end********] datetime: 2024-09-19 14:33:52 
+Running size 131072
+[*******final summary********] datetime: 2024-09-19 14:37:26 
+[MFU	51.45] datetime: 2024-09-19 14:37:26 
+[TGS	360.46] datetime: 2024-09-19 14:37:26 
+[*******summary end********] datetime: 2024-09-19 14:37:26 
+Running size 262144
+[*******final summary********] datetime: 2024-09-19 14:41:05 
+[MFU	106.24] datetime: 2024-09-19 14:41:05 
+[TGS	432.17] datetime: 2024-09-19 14:41:05 
+[*******summary end********] datetime: 2024-09-19 14:41:05 
+Running size 524288
+[*******final summary********] datetime: 2024-09-19 14:51:29 
+[MFU	123.87] datetime: 2024-09-19 14:51:29 
+[TGS	274.05] datetime: 2024-09-19 14:51:29 
+[*******summary end********] datetime: 2024-09-19 14:51:29 
+Running size 1048576
+[*******final summary********] datetime: 2024-09-19 15:27:46 
+[MFU	131.89] datetime: 2024-09-19 15:27:46 
+[TGS	152.60] datetime: 2024-09-19 15:27:46 
+[*******summary end********] datetime: 2024-09-19 15:27:46 

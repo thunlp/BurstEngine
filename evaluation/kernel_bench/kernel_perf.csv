@@ -1,0 +1,18 @@
+Implementation,Dtype,QKV Format,CUDA Kernel,B,Seq Len,TFLOPs/s,Multi-node
+Megatron-CP,bf16,bshd,FlashAttention,1,131072,53.10,True
+Megatron-CP,bf16,bshd,FlashAttention,1,262144,104.59,True
+Megatron-CP,bf16,bshd,FlashAttention,1,524288,0,True
+Megatron-CP,bf16,bshd,FlashAttention,1,1048576,0,True
+LoongTrain-DoubleRing,bf16,bshd,FlashAttention,1,131072,99.11,True
+LoongTrain-DoubleRing,bf16,bshd,FlashAttention,1,262144,145.39,True
+LoongTrain-DoubleRing,bf16,bshd,FlashAttention,1,524288,160.25,True
+LoongTrain-DoubleRing,bf16,bshd,FlashAttention,1,1048576,140.69,True
+LoongTrain-USP,bf16,bshd,FlashAttention,1,131072, 140.41,True
+LoongTrain-USP,bf16,bshd,FlashAttention,1,262144, 166.84,True
+LoongTrain-USP,bf16,bshd,FlashAttention,1,524288, 174.46,True
+LoongTrain-USP,bf16,bshd,FlashAttention,1,1048576,181.70,True
+BurstAttention,bf16,bshd,FlashAttention,1,131072, 128.76,True
+BurstAttention,bf16,bshd,FlashAttention,1,262144, 163.28,True
+BurstAttention,bf16,bshd,FlashAttention,1,524288, 178.56,True
+BurstAttention,bf16,bshd,FlashAttention,1,1048576,187.74,True
+

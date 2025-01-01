@@ -1,0 +1,13 @@
+bs,bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std
+1,low,7b,8,8192,tp+sp+flash,11.77,3.5877,15.49,2377.32,6.74,0.08
+1,low,7b,8,8192,burst+flash,38.36,4.1928,12.85,1972.74,6.74,0.41
+1,low,7b,8,8192,ring,70.67,4.6085,11.63,1785.15,6.74,0.09
+2,low,7b,8,8192,tp+sp+flash,18.63,7.3776,14.48,2222.37,6.74,0.04
+2,low,7b,8,8192,burst+flash,45.7,7.0892,15.37,2358.7,6.74,0.41
+2,low,7b,8,8192,ring,NaN,NaN,NaN,NaN,NaN,NaN
+4,low,7b,8,8192,tp+sp+flash,32.57,14.2725,15.05,2309.18,6.74,0.4
+4,low,7b,8,8192,burst+flash,60.31,11.2414,19.04,2921.32,6.74,0.7
+4,low,7b,8,8192,ring,NaN,NaN,NaN,NaN,NaN,NaN
+8,low,7b,8,8192,tp+sp+flash,60.43,27.4567,15.55,2386.88,6.74,0.27
+8,low,7b,8,8192,burst+flash,NaN,NaN,NaN,NaN,NaN,NaN
+8,low,7b,8,8192,ring,NaN,NaN,NaN,NaN,NaN,NaN

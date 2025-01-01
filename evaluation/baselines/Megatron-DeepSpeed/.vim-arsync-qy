@@ -1,0 +1,11 @@
+remote_host qiyuan
+remote_user hanxv 
+remote_port '0'
+remote_path  /home/hanxv/workspace/Megatron-DeepSpeed
+local_path    /Users/tachicoma/projects/Megatron-DeepSpeed/
+ignore_dotfiles 0
+ignore_path ["*.pt", "*.nsys-rep", "script/output", "script/data/", "megatron/fused_kernels/", "llama-7b*", "/ckpt/", "tensorboard*"]
+auto_sync_up    1
+remote_or_local remote
+sleep_before_sync 0
+rsync_flags ["--max-size=100k"]

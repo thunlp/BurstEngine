@@ -1,0 +1,16 @@
+{
+    "vocab_size": 32000,
+    "dropout_p": 0.0,
+    "eps": 1e-05,
+    "half": true,
+    "use_flash_attn": true,
+    "flash_attn_mask_shape": "2d",
+    "dim_model": 8192,
+    "dim_ff": 22016,
+    "dim_head": 128,
+    "num_heads": 64,
+    "num_kv_heads": 64,
+    "num_layers": 48,
+    "activate_fn": "silu",
+    "scale": false
+}

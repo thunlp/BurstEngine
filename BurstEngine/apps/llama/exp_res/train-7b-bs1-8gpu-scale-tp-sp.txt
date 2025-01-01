@@ -1,0 +1,4 @@
+bs,bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std
+1,low,7b,8,4096,tp+sp+flash,8.36,2.219,10.7,1874.39,6.74,0.07
+bs,bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std
+1,low,7b,8,4096,ring,42.71,2.0984,11.2,1961.15,6.74,0.03

@@ -1,0 +1,5 @@
+  cpu_offloading: True
+  cpu_offloading_num_layers: 40
+  _cpu_offloading_context: null
+  cpu_offloading_weights: True
+  cpu_offloading_activations: False

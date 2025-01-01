@@ -1,0 +1,12 @@
+auto_sync_up 1
+ignore_dotfiles 1
+local_options -var
+local_path /Users/tachicoma/projects/Burst-Attention/
+remote_host cent2
+remote_options -vazr
+remote_or_local remote
+remote_path /home/test/test01/sa/workspace/BurstAttn/
+remote_port 0
+rsync_flags ["--max-size=100m"]
+sleep_before_sync 0
+backend sftp

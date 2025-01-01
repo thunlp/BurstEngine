@@ -1,0 +1,12 @@
+{"batch_size": 1, "seqlen": 131072, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.07124989782460034, "forward_backward": 0.21284248074516654, "causal": true}
+{"batch_size": 1, "seqlen": 131072, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.07477851887233555, "forward_backward": 0.2246615388430655, "causal": true}
+{"batch_size": 1, "seqlen": 262144, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.1048963509965688, "forward_backward": 0.43927015690132976, "causal": true}
+{"batch_size": 1, "seqlen": 262144, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.11643834505230188, "forward_backward": 0.46537914010696113, "causal": true}
+{"batch_size": 1, "seqlen": 524288, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.37442704290151596, "forward_backward": 1.4557934799231589, "causal": true}
+{"batch_size": 1, "seqlen": 524288, "num_heads": 32, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.39514754503034055, "forward_backward": 1.480405726004392, "causal": true}
+{"batch_size": 1, "seqlen": 131072, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.05028067659586668, "forward_backward": 0.19999972528312357, "causal": true}
+{"batch_size": 1, "seqlen": 131072, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.054052846715785564, "forward_backward": 0.2062688955105841, "causal": true}
+{"batch_size": 1, "seqlen": 262144, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.12951623750850558, "forward_backward": 0.5109969330020249, "causal": true}
+{"batch_size": 1, "seqlen": 262144, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.14459856969770044, "forward_backward": 0.5462696240982041, "causal": true}
+{"batch_size": 1, "seqlen": 524288, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst", "forward": 0.4708730785176158, "forward_backward": 1.779395905416459, "causal": true}
+{"batch_size": 1, "seqlen": 524288, "num_heads": 40, "double_ring": true, "dim": 128, "method": "burst_striped", "forward": 0.49636012890841813, "forward_backward": 1.8492659331997856, "causal": true}

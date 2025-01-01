@@ -1,0 +1,11 @@
+remote_host cent2
+remote_port '0'
+remote_path  /home/test/test01/sa/workspace/InternEvo
+local_path    /Users/tachicoma/projects/InternEvo/
+ignore_dotfiles 0
+ignore_path []
+auto_sync_up    1
+remote_or_local remote
+sleep_before_sync 0
+rsync_flags ["--max-size=100m"]
+backend sftp

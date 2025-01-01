@@ -1,0 +1,8 @@
+Method, 128k,128k, 256k,256k, 512k,512k
+DoubleRing, 46,52, 61,38, 80, 00
+DoubleRing, 46,52, 61,38, 80, 00
+USP, 48,50, 64,35, 80, 00
+USP, 46,52, 61,38, 76, 23
+BurstAttention, 46,52, 61,38, 80, 00
+BurstAttention, 46,52, 61,38, 80, 00
+

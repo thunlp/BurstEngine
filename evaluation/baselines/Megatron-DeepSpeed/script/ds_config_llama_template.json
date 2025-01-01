@@ -1,0 +1,21 @@
+{
+  "train_batch_size": GBSIZE,
+  "train_micro_batch_size_per_gpu": MBSIZE,
+  "steps_per_print": LOG_INTERVAL,
+  "zero_optimization": {
+    "stage": ZERO_STAGE,
+    "reduce_bucket_size": 10000000,
+    "reduce_scatter": true,
+    "zero_quantized_weights": QUANTIZE,
+    "zero_quantized_gradients": QUANTIZE,
+    "zero_hpz_partition_size": HPZ_SIZE,
+    "contiguous_gradients": true,
+    "overlap_comm": true 
+  },
+  "gradient_clipping": 1.0,
+  "prescale_gradients": PRESCALE_GRAD,
+  "bf16": {
+    "enabled": true
+  }
+  "wall_clock_breakdown": true
+}

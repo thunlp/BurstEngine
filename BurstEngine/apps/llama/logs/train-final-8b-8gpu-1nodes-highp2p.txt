@@ -1,0 +1,2 @@
+bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std
+bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std

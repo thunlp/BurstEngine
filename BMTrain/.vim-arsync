@@ -1,0 +1,11 @@
+auto_sync_up 1
+ignore_dotfiles 0
+local_options -var
+local_path /Users/tachicoma/projects/BMTrain/
+remote_host cent2
+remote_options -vazre
+remote_or_local remote
+remote_path /home/test/test01/sa/workspace/BMTrain/
+remote_port 0
+rsync_flags ["--max-size=100m"]
+sleep_before_sync 0

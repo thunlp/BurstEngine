@@ -1,0 +1,10 @@
+remote_host qiyuan 
+remote_port '0'
+remote_path  /home/hanxv/workspace/Megatron-LM
+local_path    /Users/tachicoma/projects/Megatron-LM/
+ignore_dotfiles 0
+ignore_path ["*.pt", "*.nsys-rep", "output/", "megatron/fused_kernels/build", "llama-7b*", "/ckpt/", "tensorboard*", "megatron/data/", "data/"]
+auto_sync_up    1
+remote_or_local remote
+sleep_before_sync 0
+rsync_flags ["--max-size=100m"]

@@ -1,0 +1,4 @@
+bs,bw,dim,gpus,seqlen,method,mem,time,tflops,toks,params,std
+1,low,7b,8,12288,burst+flash,41.88,5.6877,15.88,2168.85,6.74,0.1
+1,low,7b,8,12288,tp+sp+flash,15.11,5.1687,17.42,2379.88,6.74,0.05
+1,low,7b,8,12288,ring,NaN,NaN,NaN,NaN,NaN,NaN

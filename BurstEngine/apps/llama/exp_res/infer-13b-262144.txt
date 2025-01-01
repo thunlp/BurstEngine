@@ -1,0 +1,3 @@
+bw,dim,gpus,seqlen,method,mem,time,toks,params,std
+low,13b,8,262144,tp,NaN,NaN,NaN,NaN,NaN
+low,13b,8,262144,tp+flash,NaN,NaN,NaN,NaN,NaN

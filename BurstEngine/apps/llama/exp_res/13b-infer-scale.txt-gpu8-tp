@@ -1,0 +1,2 @@
+bw,dim,gpus,seqlen,method,mem,time,toks,params,std
+low,13b,8,262144,tp+sp+flash,21.07,89.2181,2938.24,13.02,0.09

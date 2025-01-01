@@ -1,0 +1,10 @@
+remote_host cent 
+remote_port '0'
+remote_path  /home/test/test01/sa/workspace/Megatron-DeepSpeed
+local_path    /Users/tachicoma/projects/Megatron-DeepSpeed/
+ignore_dotfiles 0
+ignore_path ["*.pt", "*.nsys-rep", "output/", "script/output", "script/data/codeparrot_content*", "megatron/fused_kernels/build", "llama-7b*", "/ckpt/", "tensorboard*", "megatron/data/"]
+auto_sync_up    1
+remote_or_local remote
+sleep_before_sync 0
+rsync_flags ["--max-size=100m"]

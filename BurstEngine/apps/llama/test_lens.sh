@@ -1,0 +1,4 @@
+#!/bin/bash
+cmd="export NCCL_P2P_DISABLE=1;torchrun --nnodes=1 --nproc_per_node=8 --node_rank=0 --rdzv_id=1 --rdzv_backend=c10d --rdzv_endpoint=localhost:12306 pretrain_llama_hug_tokenizer.py --model-config config/0.1b/config.json --vocab config/7b/vocab.txt --train-iters 400000 --lr 1.5e-4 --inspect-iters 100 --warmup-iters 2000 --lr-decay-style noam --weight-decay 0.1 --clip-grad 1.0 --loss-scale 1048576 --dataset datasets/_datasets_laptop.json --start-step 1 --offload --batch-size 1 --max-length 32768 --tp 1 --flash cuda"
+echo $cmd
+eval $cmd

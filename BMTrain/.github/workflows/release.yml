@@ -1,0 +1,47 @@
+name: Publish release in Github
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+
+  build-archive-wheel:
+
+    uses: OpenBMB/BMTrain/.github/workflows/build_whl.yml@main
+    secrets:
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+
+  publish:
+    needs: build-archive-wheel
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set Up the Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Download distribution files
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+        path: dist
+
+    - name: Upload Distribution Files
+      uses: softprops/action-gh-release@v1
+      with:
+        body_path: "Release.txt"
+        files: |
+          dist/*.tar.gz
+          dist/*.whl
+        prerelease: false
+        name: "BMTrain v0.2.3"
+        token: ${{ secrets.RELEASE_TOKEN }}
+        tag_name: ${{ steps.create_release.outputs.tag }}
+      env:
+        GITHUB_REPOSITORY: OpenBMB/BMTrain

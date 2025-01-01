@@ -1,0 +1,9 @@
+{
+    "class": "GPTDataset",
+    "path_prefix": "/home/hanxv/Megatron-LM/data/codeparrot_content_document",
+    "num_samples": 5859840,
+    "index_split": "valid",
+    "split": "98,2,0",
+    "random_seed": 1234,
+    "sequence_length": 16384
+}

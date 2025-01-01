@@ -1,0 +1,27 @@
+{
+    "class": "GPTDataset",
+    "dataset_path": "data/codeparrot_content_document",
+    "num_samples": 0,
+    "index_split": "valid",
+    "random_seed": 1234,
+    "sequence_length": 8192,
+    "split": "98,2,0",
+    "split_matrix": [
+        [
+            0,
+            0.98
+        ],
+        [
+            0.98,
+            1.0
+        ],
+        null
+    ],
+    "tokenizer": {
+        "class": "_GPT2BPETokenizer",
+        "tokenizer_path": [
+            "data/vocab.json",
+            "data/merges.txt"
+        ]
+    }
+}

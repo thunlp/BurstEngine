@@ -1,0 +1,12 @@
+[
+    {
+        "dataset_name": "wikipedia",
+        "task_name": "wikipedia",
+        "weight": 1.0,
+        "path": "/data/public/zwl_data/wikipedia_bin_0804/data",
+        "incontext_weight": [
+            1.0
+        ],
+        "transforms": "/home/hanxv/tpCPM-Live/apps/llama/datasets/wikipedia/script_cpmc.py"
+    }
+]
