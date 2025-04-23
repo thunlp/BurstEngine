@@ -1,0 +1,1125 @@
+Writing to /root/.config/pip/pip.conf
+Looking in indexes: https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages (4.51.1)
+Collecting pytrie
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/b9/fd/499b261a34e9c6e39b9f5711c4b3093bca980b8db4b49de3009d808f41c9/PyTrie-0.4.0-py3-none-any.whl (6.1 kB)
+Collecting sentencepiece
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/a6/27/33019685023221ca8ed98e8ceb7ae5e166032686fa3662c68f1f1edf334e/sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 73.4 MB/s eta 0:00:00
+Collecting ring_flash_attn
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/1a/58/e2b7929c602436b0cdc6cc8088e2eb13df682612a8792091ab7c4b2dd6ba/ring_flash_attn-0.1.4-py3-none-any.whl (24 kB)
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers) (3.15.4)
+Requirement already satisfied: huggingface-hub<1.0,>=0.30.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.30.2)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (1.24.4)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from transformers) (24.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (6.0.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers) (2024.5.15)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from transformers) (2.32.3)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.21.1)
+Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.5.3)
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.10/dist-packages (from transformers) (4.66.4)
+Requirement already satisfied: sortedcontainers in /usr/local/lib/python3.10/dist-packages (from pytrie) (2.4.0)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.30.0->transformers) (2024.5.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.30.0->transformers) (4.12.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->transformers) (2024.7.4)
+Installing collected packages: sentencepiece, ring_flash_attn, pytrie
+Successfully installed pytrie-0.4.0 ring_flash_attn-0.1.4 sentencepiece-0.2.0
+Looking in indexes: https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+Collecting transformers==4.29.2
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/17/aa/a89864288afe45abe1ab79f002140a20348140e86836d96096d8f8a3bac0/transformers-4.29.2-py3-none-any.whl (7.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 77.1 MB/s eta 0:00:00
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (3.15.4)
+Requirement already satisfied: huggingface-hub<1.0,>=0.14.1 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (0.30.2)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (1.24.4)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (24.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (6.0.1)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (2024.5.15)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (2.32.3)
+Collecting tokenizers!=0.11.3,<0.14,>=0.11.1 (from transformers==4.29.2)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/94/60/ff26cce378023624ffcad91edaa4871f561d6ba7295185c45037ddba80e2/tokenizers-0.13.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.8/7.8 MB 78.4 MB/s eta 0:00:00
+Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.10/dist-packages (from transformers==4.29.2) (4.66.4)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.14.1->transformers==4.29.2) (2024.5.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub<1.0,>=0.14.1->transformers==4.29.2) (4.12.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests->transformers==4.29.2) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->transformers==4.29.2) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->transformers==4.29.2) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->transformers==4.29.2) (2024.7.4)
+Installing collected packages: tokenizers, transformers
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.21.1
+    Uninstalling tokenizers-0.21.1:
+      Successfully uninstalled tokenizers-0.21.1
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.51.1
+    Uninstalling transformers-4.51.1:
+      Successfully uninstalled transformers-4.51.1
+Successfully installed tokenizers-0.13.3 transformers-4.29.2
+Looking in indexes: https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+Requirement already satisfied: sentencepiece in /usr/local/lib/python3.10/dist-packages (0.2.0)
+Requirement already satisfied: ring_flash_attn in /usr/local/lib/python3.10/dist-packages (0.1.4)
+Collecting datasets
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/b4/83/50abe521eb75744a01efe2ebe836a4b61f4df37941a776f650f291aabdf9/datasets-3.5.0-py3-none-any.whl (491 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 491.2/491.2 kB 16.7 MB/s eta 0:00:00
+Collecting pyecharts
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/ae/18/383622b338e4f6948ba1b75a8155d748ce097ead08a4163ca763f0ad510e/pyecharts-2.0.8-py3-none-any.whl (153 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.7/153.7 kB 18.1 MB/s eta 0:00:00
+Requirement already satisfied: filelock in /usr/local/lib/python3.10/dist-packages (from datasets) (3.15.4)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.10/dist-packages (from datasets) (1.24.4)
+Collecting pyarrow>=15.0.0 (from datasets)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/ef/c9/68ab123ee1528699c4d5055f645ecd1dd68ff93e4699527249d02f55afeb/pyarrow-19.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (42.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 MB 53.3 MB/s eta 0:00:00
+Collecting dill<0.3.9,>=0.3.0 (from datasets)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/c9/7a/cef76fd8438a42f96db64ddaa85280485a9c395e7df3db8158cfec1eee34/dill-0.3.8-py3-none-any.whl (116 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 116.3/116.3 kB 13.4 MB/s eta 0:00:00
+Requirement already satisfied: pandas in /usr/local/lib/python3.10/dist-packages (from datasets) (2.2.1)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.10/dist-packages (from datasets) (2.32.3)
+Requirement already satisfied: tqdm>=4.66.3 in /usr/local/lib/python3.10/dist-packages (from datasets) (4.66.4)
+Collecting xxhash (from datasets)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/f2/07/d9a3059f702dec5b3b703737afb6dda32f304f6e9da181a229dafd052c29/xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.1/194.1 kB 26.8 MB/s eta 0:00:00
+Collecting multiprocess<0.70.17 (from datasets)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/bc/f7/7ec7fddc92e50714ea3745631f79bd9c96424cb2702632521028e57d3a36/multiprocess-0.70.16-py310-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.8/134.8 kB 22.3 MB/s eta 0:00:00
+Requirement already satisfied: fsspec<=2024.12.0,>=2023.1.0 in /usr/local/lib/python3.10/dist-packages (from fsspec[http]<=2024.12.0,>=2023.1.0->datasets) (2024.5.0)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.10/dist-packages (from datasets) (3.9.5)
+Requirement already satisfied: huggingface-hub>=0.24.0 in /usr/local/lib/python3.10/dist-packages (from datasets) (0.30.2)
+Requirement already satisfied: packaging in /usr/local/lib/python3.10/dist-packages (from datasets) (24.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.10/dist-packages (from datasets) (6.0.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from pyecharts) (3.1.4)
+Collecting prettytable (from pyecharts)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/02/c7/5613524e606ea1688b3bdbf48aa64bafb6d0a4ac3750274c43b6158a390f/prettytable-3.16.0-py3-none-any.whl (33 kB)
+Collecting simplejson (from pyecharts)
+  Downloading https://mirrors.tuna.tsinghua.edu.cn/pypi/web/packages/bb/9e/da184f0e9bb3a5d7ffcde713bd41b4fe46cca56b6f24d9bd155fac56805a/simplejson-3.20.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.0/138.0 kB 18.0 MB/s eta 0:00:00
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.3.1)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (23.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.4.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (6.0.5)
+Requirement already satisfied: yarl<2.0,>=1.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (1.9.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp->datasets) (4.0.3)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.10/dist-packages (from huggingface-hub>=0.24.0->datasets) (4.12.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.32.2->datasets) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.32.2->datasets) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.32.2->datasets) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.32.2->datasets) (2024.7.4)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->pyecharts) (2.1.5)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.10/dist-packages (from pandas->datasets) (2024.1)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.10/dist-packages (from prettytable->pyecharts) (0.2.13)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.16.0)
+Installing collected packages: xxhash, simplejson, pyarrow, prettytable, dill, pyecharts, multiprocess, datasets
+  Attempting uninstall: pyarrow
+    Found existing installation: pyarrow 14.0.2
+    Uninstalling pyarrow-14.0.2:
+      Successfully uninstalled pyarrow-14.0.2
+Successfully installed datasets-3.5.0 dill-0.3.8 multiprocess-0.70.16 prettytable-3.16.0 pyarrow-19.0.1 pyecharts-2.0.8 simplejson-3.20.1 xxhash-3.5.0
+g43
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+3288
+32
+8
+32
+8
+832
+
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+88
+
+32
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+8
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+head first : False
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+8
+32
+----------------------------------------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                                                                Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+----------------------------------------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                                                      nccl:coalesced         0.00%       0.000us         0.00%       0.000us       0.000us        1.796s        34.09%        1.796s       4.081ms           440  
+                                autograd::engine::evaluate_function: ZigZagRingFlashAttnFuncBackward         0.02%     532.546us        11.18%     249.955ms      24.996ms       0.000us         0.00%        1.373s     137.341ms            10  
+                                                                     ZigZagRingFlashAttnFuncBackward         1.63%      36.527ms        11.15%     249.359ms      24.936ms        1.341s        25.46%        1.373s     137.341ms            10  
+                                            ncclDevKernel_SendRecv(ncclDevKernelArgsStorage<4096ul>)         0.00%       0.000us         0.00%       0.000us       0.000us        1.322s        25.09%        1.322s       3.304ms           400  
+void flash_bwd_dq_dk_dv_loop_seqk_parallel_kernel<Flash_bwd_kernel_traits<128, 64, 128, 8, 2, 4, ...         0.00%       0.000us         0.00%       0.000us       0.000us     875.938ms        16.63%     875.938ms       9.626ms            91  
+                                                                                       ProfilerStep*        13.96%     312.091ms        28.91%     646.392ms      64.639ms       0.000us         0.00%     585.543ms      58.554ms            10  
+                                                                             ZigZagRingFlashAttnFunc         0.72%      16.073ms        13.69%     306.100ms      30.610ms     445.000ms         8.45%     459.714ms      45.971ms            10  
+                                                                                       ProfilerStep*         0.00%       0.000us         0.00%       0.000us       0.000us     456.046ms         8.66%     456.046ms      45.605ms            10  
+void flash_fwd_kernel<Flash_fwd_kernel_traits<128, 128, 64, 4, false, false, cutlass::bfloat16_t,...         0.00%       0.000us         0.00%       0.000us       0.000us     295.093ms         5.60%     295.093ms       3.243ms            91  
+                                                                                        _SeqAllToAll         0.47%      10.608ms         3.52%      78.816ms     985.204us       0.000us         0.00%     281.172ms       3.515ms            80  
+                                                                                c10d::alltoall_base_         0.09%       1.906ms         0.44%       9.738ms     121.728us       0.000us         0.00%     273.456ms       3.418ms            80  
+                                                                                  record_param_comms         0.71%      15.803ms         0.97%      21.794ms      16.637us     273.456ms         5.19%     273.456ms     208.745us          1310  
+                                                                                     nccl:all_to_all         0.00%       0.000us         0.00%       0.000us       0.000us     273.456ms         5.19%     273.456ms       3.418ms            80  
+                                           autograd::engine::evaluate_function: _SeqAllToAllBackward         0.03%     650.007us         2.61%      58.299ms       1.457ms       0.000us         0.00%     155.343ms       3.884ms            40  
+                                                                                _SeqAllToAllBackward         0.07%       1.609ms         2.58%      57.599ms       1.440ms       0.000us         0.00%     155.343ms       3.884ms            40  
+void flash_bwd_dq_dk_dv_loop_seqk_parallel_kernel<Flash_bwd_kernel_traits<128, 64, 128, 8, 2, 4, ...         0.00%       0.000us         0.00%       0.000us       0.000us     117.195ms         2.23%     117.195ms       9.015ms            13  
+void flash_fwd_kernel<Flash_fwd_kernel_traits<128, 128, 64, 4, false, false, cutlass::bfloat16_t,...         0.00%       0.000us         0.00%       0.000us       0.000us      43.064ms         0.82%      43.064ms       3.589ms            12  
+void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctor_add<float>, at::detail::Arra...         0.00%       0.000us         0.00%       0.000us       0.000us      32.795ms         0.62%      32.795ms     120.126us           273  
+                                                                                          aten::add_         0.09%       2.113ms         0.57%      12.795ms      53.314us      27.323ms         0.52%      27.323ms     113.845us           240  
+                                                                                         aten::copy_         0.17%       3.897ms         4.41%      98.496ms     223.855us      21.775ms         0.41%      21.775ms      49.488us           440  
+void flash_bwd_dot_do_o_kernel<true, Flash_bwd_kernel_traits<128, 64, 128, 8, 2, 4, 2, false, fal...         0.00%       0.000us         0.00%       0.000us       0.000us      10.107ms         0.19%      10.107ms      97.186us           104  
+void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct...         0.00%       0.000us         0.00%       0.000us       0.000us       9.744ms         0.18%       9.744ms      96.474us           101  
+                                                                                            aten::to         0.01%     150.911us         2.30%      51.391ms     467.193us       0.000us         0.00%       8.833ms      80.298us           110  
+                                                                                      aten::_to_copy         0.02%     422.347us         2.29%      51.240ms     640.504us       0.000us         0.00%       8.833ms     110.410us            80  
+                                                                                    aten::contiguous         0.02%     345.013us         2.50%      55.869ms     372.458us       0.000us         0.00%       8.112ms      54.083us           150  
+                                                                                         aten::clone         0.03%     663.518us         2.48%      55.524ms     370.158us       0.000us         0.00%       8.112ms      54.083us           150  
+                                                                    fused_to_sub_sigmoid_sub_mul_sub         0.00%       0.000us         0.00%       0.000us       0.000us       7.990ms         0.15%       7.990ms      87.798us            91  
+                                                                                 _update_out_and_lse         0.04%     913.032us         1.98%      44.370ms     633.856us       0.000us         0.00%       7.642ms     109.178us            70  
+                                                                    fused_to_sub_sigmoid_sub_mul_sub         0.05%       1.099ms         0.17%       3.869ms      55.269us       6.162ms         0.12%       6.162ms      88.022us            70  
+void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIterat...         0.00%       0.000us         0.00%       0.000us       0.000us       5.820ms         0.11%       5.820ms     111.928us            52  
+void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIterat...         0.00%       0.000us         0.00%       0.000us       0.000us       5.686ms         0.11%       5.686ms     109.354us            52  
+                                                                      Memcpy DtoD (Device -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us       5.510ms         0.10%       5.510ms      60.551us            91  
+void flash_bwd_convert_dq_kernel<Flash_bwd_kernel_traits<128, 64, 128, 8, 2, 4, 2, false, false, ...         0.00%       0.000us         0.00%       0.000us       0.000us       5.260ms         0.10%       5.260ms      50.573us           104  
+void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<c10::BFloat16>, at:...         0.00%       0.000us         0.00%       0.000us       0.000us       2.730ms         0.05%       2.730ms      70.006us            39  
+                                autograd::engine::evaluate_function: torch::autograd::AccumulateGrad         0.01%     163.623us         0.04%     826.931us      27.564us       0.000us         0.00%       2.100ms      69.992us            30  
+                                                                     torch::autograd::AccumulateGrad         0.01%     171.433us         0.03%     663.308us      22.110us       0.000us         0.00%       2.100ms      69.992us            30  
+void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::CUDAFu...         0.00%       0.000us         0.00%       0.000us       0.000us       1.347ms         0.03%       1.347ms       7.403us           182  
+void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct...         0.00%       0.000us         0.00%       0.000us       0.000us       1.275ms         0.02%       1.275ms       7.007us           182  
+                                                                                           aten::sub         0.08%       1.826ms         1.56%      34.944ms     249.603us       1.051ms         0.02%       1.051ms       7.508us           140  
+void at::native::vectorized_elementwise_kernel<4, at::native::launch_log_sigmoid_forward_kernel(a...         0.00%       0.000us         0.00%       0.000us       0.000us     546.944us         0.01%     546.944us       6.010us            91  
+                                                                                   aten::log_sigmoid         0.01%     160.905us         0.19%       4.193ms      59.895us       0.000us         0.00%     429.728us       6.139us            70  
+                                                                           aten::log_sigmoid_forward         0.03%     601.114us         0.18%       4.027ms      57.526us     429.728us         0.01%     429.728us       6.139us            70  
+                                                                                       aten::reshape         0.01%     326.008us         0.05%       1.007ms       6.296us       0.000us         0.00%       0.000us       0.000us           160  
+                                                                                          aten::view         0.03%     680.130us         0.03%     681.391us       4.259us       0.000us         0.00%       0.000us       0.000us           160  
+                                                                                     aten::transpose         0.03%     674.531us         0.04%     913.988us       5.376us       0.000us         0.00%       0.000us       0.000us           170  
+                                                                                    aten::as_strided         0.08%       1.683ms         0.08%       1.683ms       0.748us       0.000us         0.00%       0.000us       0.000us          2250  
+                                                                                    aten::empty_like         0.06%       1.324ms         1.47%      32.846ms      46.923us       0.000us         0.00%       0.000us       0.000us           700  
+                                                                                         aten::empty         0.27%       5.944ms         0.61%      13.587ms      23.837us       0.000us         0.00%       0.000us       0.000us           570  
+                                                                                      cudaEventQuery         0.71%      15.801ms         0.71%      15.861ms       2.004us       0.000us         0.00%       0.000us       0.000us          7916  
+                                                                                    cudaLaunchKernel        20.41%     456.278ms        20.43%     456.742ms     426.862us       0.000us         0.00%       0.000us       0.000us          1070  
+                                                                                 aten::empty_strided         0.30%       6.678ms         1.45%      32.448ms      51.504us       0.000us         0.00%       0.000us       0.000us           630  
+                                                                               cudaStreamIsCapturing         0.04%       1.001ms         0.04%       1.001ms       0.770us       0.000us         0.00%       0.000us       0.000us          1300  
+                                                                                     cudaEventRecord         0.14%       3.196ms         0.14%       3.199ms       1.255us       0.000us         0.00%       0.000us       0.000us          2550  
+                                                                                 cudaStreamWaitEvent         0.11%       2.440ms         0.11%       2.440ms       1.264us       0.000us         0.00%       0.000us       0.000us          1930  
+                                                                                     nccl:all_to_all         0.00%       0.000us             0       5.628ms      70.354us       0.000us         0.00%       0.000us       0.000us            80  
+                                                                         cudaStreamGetCaptureInfo_v2         0.01%     301.865us         0.01%     301.865us       0.974us       0.000us         0.00%       0.000us       0.000us           310  
+                                                                                 cudaGetFuncBySymbol         0.01%     132.577us         0.01%     132.577us       0.428us       0.000us         0.00%       0.000us       0.000us           310  
+                                                                                    cuLaunchKernelEx         0.14%       3.068ms         0.14%       3.085ms       9.953us       0.000us         0.00%       0.000us       0.000us           310  
+                                                                                          c10d::send         0.27%       6.112ms         0.58%      12.980ms      28.218us       0.000us         0.00%       0.000us       0.000us           460  
+                                                                                         c10d::recv_         0.21%       4.784ms         0.47%      10.447ms      22.710us       0.000us         0.00%       0.000us       0.000us           460  
+                                                                                      nccl:coalesced         0.00%       0.000us             0     517.740ms       2.251ms       0.000us         0.00%       0.000us       0.000us           230  
+                                                                                cudaFuncSetAttribute         0.01%     281.819us         0.01%     281.819us       1.761us       0.000us         0.00%       0.000us       0.000us           160  
+                                                                                     aten::unsqueeze         0.01%     214.436us         0.01%     257.320us       3.217us       0.000us         0.00%       0.000us       0.000us            80  
+                                                                                         aten::slice         0.20%       4.384ms         0.26%       5.794ms       2.912us       0.000us         0.00%       0.000us       0.000us          1990  
+                                                                                      cuLaunchKernel         0.02%     505.267us         0.02%     505.267us       7.218us       0.000us         0.00%       0.000us       0.000us            70  
+                                                                                     cudaMemcpyAsync         0.07%       1.466ms         0.07%       1.499ms      21.411us       0.000us         0.00%       0.000us       0.000us            70  
+                                                                                       aten::squeeze         0.00%      33.207us         0.00%      41.536us       4.154us       0.000us         0.00%       0.000us       0.000us            10  
+                                                                              cudaDeviceGetAttribute         0.00%      86.981us         0.00%      86.981us       1.087us       0.000us         0.00%       0.000us       0.000us            80  
+                                                                                         aten::chunk         0.02%     444.494us         0.18%       4.055ms      14.484us       0.000us         0.00%       0.000us       0.000us           280  
+                                                                                         aten::split         0.05%       1.111ms         0.16%       3.611ms      12.896us       0.000us         0.00%       0.000us       0.000us           280  
+                                                                                        aten::narrow         0.04%     979.552us         0.11%       2.500ms       4.464us       0.000us         0.00%       0.000us       0.000us           560  
+                                                                                          cudaMalloc         1.40%      31.239ms         1.40%      31.294ms     447.058us       0.000us         0.00%       0.000us       0.000us            70  
+                                                                               cudaDeviceSynchronize        57.09%        1.276s        57.26%        1.280s        1.280s       0.000us         0.00%       0.000us       0.000us             1  
+----------------------------------------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 2.236s
+Self CUDA time total: 5.267s
+
+{'flash': [(875.938, 0.1663), (295.093, 0.055999999999999994), (117.195, 0.0223), (43.064, 0.008199999999999999), (10.107, 0.0019), (5.26, 0.001)], 'SendRecv': []}
+8
+32
+head first : False
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+8
+32
+32
+8
+32
+3232
+
+8
+8
+32
+8
+32
+32
+8
+32
+8
+
+==================================================
+Benchmark Results for ZigZagRingFlashAttnFunc
+==================================================
+Configuration:
+  - Dtype: bf16
+  - QKV Format: bshd
+  - Batch Size: 1
+  - Sequence Length: 131072
+  - Num Heads: 40
+  - Head Dimension: 128
+  - GQA Groups: 40
+  - Attention Mask: causal
+  - Window Size: (-1, -1)
+  - Context Parallel: True
+  - World Size: 32
+
+Performance:
+  - Forward Time: 116.39 ms
+  - Forward+Backward Time: 215.82 ms
+  - FlashAttention Kernel: 0.26 %
+  - RingComm : 0.00 %
+  - Memory Usage: 1241.25 MB
+  - Performance: 89.16 TFLOPs/s
+==================================================
+
+32
+32
+8
+32
+8
+8
+32
+8
+32
+8
+32
