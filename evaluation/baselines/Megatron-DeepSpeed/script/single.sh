@@ -8,7 +8,7 @@ sizes=(  65536 131072 262144 524288 )
 
 export CP_SIZE=8
 export NODES="g71"
-DOCKER_DIR=/workspace/workspace/Megatron-DeepSpeed
+DOCKER_DIR=Megatron-DeepSpeed
 export WORLD_SIZE=1
 export LOG_FILE=$DOCKER_DIR/single_ulysses_13b.log
 export MODEL="7b"

@@ -7,7 +7,7 @@ sizes=( 65536 131072 262144 524288 )
 
 export NODES="g41 g47 g48 g71"
 export NODES="g41 g47 g74 g75 g45 g49 g72"
-DOCKER_DIR=/workspace/workspace/InternEvo
+DOCKER_DIR=InternEvo
 export WORLD_SIZE=8
 export LOG_FILE=$DOCKER_DIR/70b_loongtrain-128-512k.log
 export MODEL="30b"

@@ -36,6 +36,6 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit stack=67108864  \
   --privileged=true \
   78283aaa4c6345ad05327e6093eb83c87 /bin/bash -c " \
-  cd /workspace/workspace/Megatron-LM \
+  cd Megatron-LM \
     && cp ./patch.py /usr/local/lib/python3.10/dist-packages/transformer_engine/pytorch/attention.py \
   && bash ./multi.sh"

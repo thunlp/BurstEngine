@@ -9,7 +9,7 @@ methods=(
   "megatron-cp"
 )
 export NODES="g41"
-DOCKER_DIR=/workspace/workspace/Megatron-LM
+DOCKER_DIR=Megatron-LM
 export WORLD_SIZE=1
 export LOG_FILE=$DOCKER_DIR/single_node_cp_13b.log
 export MODEL="7b"

@@ -4,7 +4,7 @@ dir=`pwd`
 ### Main configs
 ## GPT-3 models use 2K sequence length/context window
 export MAX_JOBS=128
-HF_LLAMA_PATH=/workspace/workspace/models/llama-7b/
+HF_LLAMA_PATH=/llama-7b/
 gpus=8
 if [ -z $WORLD_SIZE ]; then
   WORLD_SIZE=1

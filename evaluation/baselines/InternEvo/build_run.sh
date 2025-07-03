@@ -34,7 +34,7 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit stack=67108864  \
   --privileged=true \
   78283aaa4c6345ad05327e6093eb83c87 /bin/bash -c " \
-  cd /workspace/workspace/InternEvo \
+  cd InternEvo \
   && bash pre.sh \
   && mkdir -p "$(dirname "$running_log")" \
   && echo 'hp $HP_SIZE cp $CP_SIZE seqlen $1 with ckpt $sele_ckpt' >> $running_log \

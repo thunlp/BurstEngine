@@ -7,7 +7,7 @@ methods=(
 )
 export CP_SIZE=16
 
-DOCKER_DIR=/workspace/workspace/Megatron-LM
+DOCKER_DIR=Megatron-LM
 export WORLD_SIZE=2
 export LOG_FILE=$DOCKER_DIR/16gpu_burst_ulysses_256k.log
 echo $LOG_FILE

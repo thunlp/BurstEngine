@@ -6,7 +6,7 @@ sizes=( 65536 )
 
 export NODES="g41 g43 g47 g49 g71 g72 g73 g74 g75"
  
-DOCKER_DIR=/workspace/workspace/Megatron-DeepSpeed
+DOCKER_DIR=Megatron-DeepSpeed
 export WORLD_SIZE=8
 export LOG_FILE=$DOCKER_DIR/30b-64k.log
 export LOG_FILE=$DOCKER_DIR/test-64k.log
