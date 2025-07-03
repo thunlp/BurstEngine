@@ -3,10 +3,10 @@
         "dataset_name": "cot_eng",
         "task_name": "cot_eng",
         "weight": 1.0,
-        "path": "/workspace/workspace/burst_exp/apps/llama/data/data",
+        "path": "/BurstEngine/apps/llama/data/data",
         "incontext_weight": [
             1.0
         ],
-        "transforms": "/workspace/workspace/burst_exp/apps/llama/cot_eng/script_cpmc.py"
+        "transforms": "/BurstEngine/apps/llama/cot_eng/script_cpmc.py"
     }
 ]

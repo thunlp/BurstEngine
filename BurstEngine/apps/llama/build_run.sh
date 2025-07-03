@@ -1,4 +1,4 @@
-WORK_DIR=/workspace/workspace/burst_exp/apps/llama
+WORK_DIR=/BurstEngine/apps/llama
 
 HOSTNAME=`hostname`
 if [ -z $MASTER_ADDR ]; then
@@ -39,4 +39,4 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
-  78283aaa4c6345ad05327e6093eb83c87 /bin/bash -c "cd $WORK_DIR && bash ./multi.sh $1 $2"
+  burst_engine:latest /bin/bash -c "cd $WORK_DIR && bash ./multi.sh $1 $2"

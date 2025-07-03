@@ -12,7 +12,7 @@ cp_sizes=( 8 )
 #   "burst"
 # )
 export NODES="g47"
-DOCKER_DIR=/workspace/workspace/burst_exp/apps/llama
+DOCKER_DIR=/BurstEngine/apps/llama
 export WORLD_SIZE=1
 export LOG_FILE=$DOCKER_DIR/single_node_exp_13b.log
 export MODEL="13b_gpt"

@@ -2,7 +2,7 @@
 
 # sizes=( 1048576 2097152 )
 # sizes = ( 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 )
-sizes=( 1048576    )
+sizes=( 1048576 )
 methods=(
   # "burst_sl_loss_sl_ckpt"
   "burst_sl_loss_whole_ckpt_sliding"
@@ -33,7 +33,7 @@ export NODES="g45 g43 g72 g73"
 export NODES="g49 g41 g47 g73"
 export MODEL="13b"
 # export NODES="g43 g47 g48 g49"
-DOCKER_DIR=/workspace/workspace/burst_exp/apps/llama
+DOCKER_DIR=/BurstEngine/apps/llama
 export LOG_FILE=$DOCKER_DIR/sl_ckpt_exp.log
 echo $LOG_FILE
 for method in ${methods[@]}; do
