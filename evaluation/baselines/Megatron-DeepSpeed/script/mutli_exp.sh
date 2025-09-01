@@ -7,10 +7,10 @@ sizes=( 2097152 )
 
 export NODES="g41 g47 g48 g71"
 export NODES="g47 g43 g74 g49"
-export NODES="g41 g43 g45 g47"
+export NODES="bjdx1 bjdx2"
 
 DOCKER_DIR=Megatron-DeepSpeed
-export WORLD_SIZE=4
+export WORLD_SIZE=2
 export LOG_FILE=$DOCKER_DIR/7b_2048k_vocab120k.log
 export MODEL="7b"
 echo $LOG_FILE

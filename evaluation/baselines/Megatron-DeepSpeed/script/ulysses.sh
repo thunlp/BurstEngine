@@ -8,6 +8,7 @@ HF_LLAMA_PATH=/llama-7b/
 gpus=8
 if [ -z $WORLD_SIZE ]; then
   WORLD_SIZE=1
+  bash pre.sh
 else
   bash pre.sh
 fi
@@ -276,7 +277,7 @@ mkdir -p ${checkpoint_path}
 mkdir -p ${tensorboard_path}
 ###############################################################################
 data_options=" \
-    --data-path data/codeparrot_content_document \
+    --data-path /data/codeparrot_content_document \
     --tokenizer-type HFTokenizer \
     --tokenizer-model $HF_LLAMA_PATH \
     --data-impl mmap"
@@ -353,7 +354,7 @@ megatron_options="${megatron_options} \
     --log-optimizer-states-to-tensorboard"
 fi
 
-config_json="../ckpt/ds_config_gbs${global_batch_size}_mbs${batch_size}_log${log_interval}_zero${zero_stage}.json"
+config_json="./ds_config_gbs${global_batch_size}_mbs${batch_size}_log${log_interval}_zero${zero_stage}.json"
 if [ -z "$hpz_enable" ] || [ "$hpz_enable" == "false" ]; then
   template_json="ds.json"
 else

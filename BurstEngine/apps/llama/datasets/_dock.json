@@ -3,7 +3,7 @@
         "dataset_name": "cot_eng",
         "task_name": "cot_eng",
         "weight": 1.0,
-        "path": "/BurstEngine/apps/llama/data/data",
+        "path": "/data/BE",
         "incontext_weight": [
             1.0
         ],

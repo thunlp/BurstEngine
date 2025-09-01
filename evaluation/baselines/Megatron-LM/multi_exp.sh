@@ -12,7 +12,7 @@ methods=(
 )
 export CP_SIZE=8
 export TP_SIZE=1
-export NODES="bjdx2"
+export NODES="bjdx1 bjdx2"
 DOCKER_DIR=Megatron-LM
 export MODEL="13b"
 export WORLD_SIZE=1

@@ -29,8 +29,7 @@ ablation=(
   "false"
 )
 export PROFILE="false"
-export NODES="g45 g43 g72 g73"
-export NODES="g49 g41 g47 g73"
+export NODES="bjdx1 bjdx2"
 export MODEL="13b"
 # export NODES="g43 g47 g48 g49"
 DOCKER_DIR=/BurstEngine/apps/llama

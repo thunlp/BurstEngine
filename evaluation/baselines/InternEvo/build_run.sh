@@ -39,4 +39,5 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   && mkdir -p "$(dirname "$running_log")" \
   && echo 'hp $HP_SIZE cp $CP_SIZE seqlen $1 with ckpt $sele_ckpt' >> $running_log \
   && touch $running_log \
+  && source $PROJECT_DIR/env.sh \
   && bash exp.sh 2>&1 | tee -a $running_log"

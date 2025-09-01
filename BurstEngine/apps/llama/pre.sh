@@ -4,7 +4,7 @@ rm -rf /root/.config/pip/pip.conf
 rm -rf /root/.pip/pip.conf
 rm -rf /usr/pip.conf
 pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
-pip install transformers pytrie sentencepiece ring_flash_attn
+pip install transformers=4.48.0 pytrie sentencepiece ring_flash_attn
 # cp -r BMTrain/ /root/BMTrain
 # yes|pip uninstall bmtrain && source ~/.bashrc && cd /root/BMTrain && pip install .
 # cd /ml-cross-entropy && rm -rf ./build && pip install .
