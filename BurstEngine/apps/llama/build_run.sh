@@ -22,7 +22,6 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --shm-size="32g" \
   --net=host \
   --gpus all --ipc=host \
-  -v /home/test/test01/sa/workspace:/workspace/workspace  \
   -e MASTER_ADDR=$MASTER_ADDR \
   -e seqlen=$1 \
   -e method=$2 \
@@ -39,4 +38,4 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
-  burst_engine:latest /bin/bash -c "cd $WORK_DIR && bash ./multi.sh $1 $2"
+  burst_engine:latest /bin/bash -c "source $PROJECT_DIR/env.sh && cd $WORK_DIR && bash ./multi.sh $1 $2"

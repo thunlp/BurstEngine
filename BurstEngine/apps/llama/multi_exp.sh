@@ -54,7 +54,7 @@ for method in ${methods[@]}; do
       echo "Running size $size with method $method" >> summary.txt
       # export LOG_FILE=$LOG_FILE;export MASTER_ADDR=g41; export MODEL=$MODEL;
       # bash submit_slurm.sh "bash build_run.sh $size $method " 
-      bash submit.sh "bash build_run.sh $size $method " 
+      bash $PROJECT_DIR/submit.sh "bash build_run.sh $size $method " 
       # bash multi.sh $size $method $cp
       done
     done

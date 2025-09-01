@@ -1,4 +1,9 @@
 FROM nvcr.io/nvidia/pytorch:24.07-py3
+
+USER root
+
+RUN apt-get update && apt-get install -y --no-install-recommends pdsh
+
 COPY ./BMTrain /BMTrain 
 
 COPY ./BurstEngine /BurstEngine
@@ -24,3 +29,5 @@ COPY ./evaluation/baselines/InternEvo /InternEvo
 COPY ./evaluation/baselines/Megatron-DeepSpeed /Megatron-DeepSpeed
 COPY ./evaluation/baselines/Megatron-LM /Megatron-LM
 COPY ./evaluation/kernel_bench/ /kernel_bench
+COPY ./env.sh /env.sh
+COPY ./data /data

@@ -17,7 +17,7 @@ for cp in 2 4 8; do
   export CP_SIZE=$cp
   for size in ${sizes[@]}; do
       # echo "Running size $size with method $method" >> summary.txt
-      # bash submit.sh "bash build_run.sh $size" 
+      # bash $PROJECT_DIR/submit.sh "bash build_run.sh $size" 
       bash ulysses.sh $size $cp
   done
 done

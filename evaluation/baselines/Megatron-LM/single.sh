@@ -18,11 +18,11 @@ for method in ${methods[@]}; do
   echo "Running method $method" >> summary.txt
   for size in ${sizes[@]}; do
       echo "Running size $size with method $method" >> summary.txt
-      # bash submit.sh "bash build_run.sh $size $method" 
+      # bash $PROJECT_DIR/submit.sh "bash build_run.sh $size $method" 
     for cp in 2 4 8; do 
       export CP_SIZE=$cp
       bash multi.sh $size $method
     done
-      # bash submit.sh "bash conda.sh $size $method" 
+      # bash $PROJECT_DIR/submit.sh "bash conda.sh $size $method" 
   done
 done

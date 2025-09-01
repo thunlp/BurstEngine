@@ -17,7 +17,7 @@ for size in ${sizes[@]}; do
   for cp in 64; do
     export CP_SIZE=$cp
     echo "Running size $size with method $method" >> summary.txt
-    bash submit.sh "bash build_run.sh $size" 
-    # bash submit.sh "bash conda.sh $size $method" 
+    bash $PROJECT_DIR/submit.sh "bash build_run.sh $size" 
+    # bash $PROJECT_DIR/submit.sh "bash conda.sh $size $method" 
   done
 done

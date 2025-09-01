@@ -1,6 +1,6 @@
 
 BLACK_LIST=("g70")
-AVAIL=`bash /home/test/test01/sa/check.sh -l `
+AVAIL=`bash ${PROJECT_DIR}/check.sh -l `
 BLACK_LIST_REGEX=$(IFS="|"; echo "${BLACK_LIST[*]}")
 AVAIL=$(echo "$AVAIL" | grep -Ev "$BLACK_LIST_REGEX")
 

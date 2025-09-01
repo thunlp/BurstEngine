@@ -1,11 +1,10 @@
 #!/bin/bash
 MAX_RESTARTS=0
-export NCCL_IB_HCA=mlx5_0,mlx5_1,mlx5_2,mlx5_3,mlx5_4,mlx5_6,mlx5_7,mlx5_8
 export NCCL_IB_QPS_PER_CONNECTION=8
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
 
-DATA_PATH="data/"
+DATA_PATH="/data/"
 DATASET="codeparrot_content_document"
 GPUS_PER_NODE=8
 method_str=""
@@ -97,7 +96,6 @@ elif [ "$MODEL" == "7b" ]; then
   NUM_ATTN_HEADS=32
 fi
 sp_method=$method
-1
 
 
 tensorboard_dir="./output/tensorboard/model_${MODEL}_seqlen_${SEQ_LEN}_gbs_${GLOBAL_BATCH}_mbs_${MICRO_BATCH}_${DATETIME}_tp_${TP_SIZE}_sp_${sp_method}"
@@ -158,7 +156,6 @@ options=" \
 	  --recompute-granularity full \
 	  --recompute-method uniform \
 	  --recompute-num-layers 1 \
-    --distribute-saved-activations \
 	"
 
   # --tp-comm-overlap \

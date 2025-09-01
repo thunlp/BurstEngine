@@ -22,7 +22,7 @@ for method in ${methods[@]}; do
       export CP_SIZE=$cp
       export ABLATION=$ablation
       echo "Running size $size with method $method" >> summary.txt
-      bash submit.sh "bash build_run.sh $size $method " 
+      bash $PROJECT_DIR/submit.sh "bash build_run.sh $size $method " 
       done
     done
   done

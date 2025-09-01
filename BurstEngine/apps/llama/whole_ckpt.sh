@@ -25,7 +25,7 @@ for cp in ${cp_sizes[@]}; do
     echo "Running method $method $CP_SIZE" >> summary.txt
     for size in ${sizes[@]}; do
         echo "Running size $size with method $method" >> summary.txt
-        # bash submit.sh "bash build_run.sh $size $method" 
+        # bash $PROJECT_DIR/submit.sh "bash build_run.sh $size $method" 
         bash multi.sh $size $method $cp
     done
   done
