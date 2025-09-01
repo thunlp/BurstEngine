@@ -1,0 +1,6 @@
+[submodule "flash-attention"]
+	path = flash-attention
+	url = git@github.com:MayDomine/flash-attention.git
+[submodule "ml-cross-entropy"]
+	path = ml-cross-entropy
+	url = git@github.com:MayDomine/ml-cross-entropy.git
