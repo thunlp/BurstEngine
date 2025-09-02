@@ -60,25 +60,25 @@ export PROJECT_DIR=/shared/sc_workspace/BE/
 
 Execute the script to launch multi node experiment.
 ```bash
-bash ./BurstEngine/apps/llama/multi_exp.sh
+cd BurstEngine/apps/llama && bash ./multi_exp.sh
 ```
 
 ### Baselines
 1. Megatron-LM
 
-     Entrypoint: `./evaluation/baselines/Megatron-LM/multi_exp.sh`
+     Entrypoint: `cd evaluation/baselines/Megatron-LM && bash multi_exp.sh`
 
 2. Megatron-DeepSpeed
 
-     Entrypoint: `./evaluation/baselines/Megatron-DeepSpeed/script/mutli_exp.sh`
+     Entrypoint: `cd evaluation/baselines/Megatron-DeepSpeed/script && bash mutli_exp.sh`
 
 3. Intern-Evo
 
-     Entrypoint: `./evaluation/baselines/InternEvo/multi_exp.sh`
+     Entrypoint: `cd evaluation/baselines/InternEvo bash multi_exp.sh`
 
 All entrypoint should be execute in the bare-metal machine instead of docker container since the entrypoint will use pdsh to launch docker image and execute the training script.
 
 
 ## Running the benchmark of Distribtued Attention
 
-Entrypoint: `./evaluation/kernel_bench/bench_all.sh`
+Entrypoint: `cd evaluation/kernel_bench/ && bash bench_all.sh`

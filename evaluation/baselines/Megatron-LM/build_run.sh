@@ -38,4 +38,4 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   burst_engine:v1 /bin/bash -c " \
   cd /Megatron-LM \
     && cp ./patch.py /usr/local/lib/python3.10/dist-packages/transformer_engine/pytorch/attention.py \
-  source $PROJECT_DIR/env.sh && bash ./multi.sh"
+  source /env.sh && bash ./multi.sh"
