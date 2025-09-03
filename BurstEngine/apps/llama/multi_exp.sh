@@ -39,7 +39,7 @@ for method in ${methods[@]}; do
   for ablation in ${ablation[@]}; do
   echo "Running method $method" >> summary.txt
   for size in ${sizes[@]}; do
-    for cp in 8; do
+    for cp in 32; do
       export WORLD_SIZE=$((cp > 8 ? cp / 8 : 1))
       size=$((32768 * cp))
       # if [[ $size -eq 262144 && $cp -eq 8 ]]; then

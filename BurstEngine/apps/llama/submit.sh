@@ -14,6 +14,7 @@ else
   fi
   # MASTER_ADDR=`echo $NODES | cut -d ' ' -f 1`
   MASTER_ADDR=`ifconfig $NCCL_SOCKET_IFNAME|grep inet|awk '{print $2}'|head -n 1`
+  echo $MASTER_ADDR
   echo "Used Nodes $NODES"
   echo "MASTER_ADDR: $MASTER_ADDR"
   echo "WORLD_SIZE: $WORLD_SIZE"

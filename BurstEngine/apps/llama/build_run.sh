@@ -38,4 +38,5 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
+  --name burst_engine \
   burst_engine:latest /bin/bash -c "source /env.sh && cd $WORK_DIR && bash ./multi.sh $1 $2"
