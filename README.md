@@ -11,13 +11,19 @@ git clone git@github.com:MayDomine/BE.git
 cd BE && git submodule update --init --recursive 
 ```
 
-2. Build the image
+2. Set up the environment script 
+
+```cat env.sh```
+
+please replace `bond0` with your NIC name and specify the IB port via `NCCL_IB_HCA` environment variable.
+
+3. Build the image
 
 ```bash
 docker build -t burst_engine:latest .
 ```
 
-3. Distribute the image
+4. Distribute the image
 
 Execute the command below on the machine where you built the image
 ```bash 

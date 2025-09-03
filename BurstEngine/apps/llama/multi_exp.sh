@@ -2,10 +2,10 @@
 
 # sizes=( 1048576 2097152 )
 # sizes = ( 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 )
-sizes=( 1048576 )
+sizes=( 524288 )
 methods=(
-  # "burst_sl_loss_sl_ckpt"
-  "burst_sl_loss_whole_ckpt_sliding"
+  "burst_sl_loss_sl_ckpt"
+  # "burst_sl_loss_whole_ckpt_sliding"
   # "burst_whole_ckpt"
   # "burst_sl_loss"
   # "burst_whole_ckpt_sl_loss"
@@ -29,8 +29,8 @@ ablation=(
   "false"
 )
 export PROFILE="false"
-export NODES="bjdx1 bjdx2"
-export MODEL="13b"
+export NODES="bjdx1 bjdx2 bjdx3 bjdx4"
+export MODEL="7b"
 # export NODES="g43 g47 g48 g49"
 DOCKER_DIR=/BurstEngine/apps/llama
 export LOG_FILE=$DOCKER_DIR/sl_ckpt_exp.log
