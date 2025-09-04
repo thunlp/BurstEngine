@@ -1,5 +1,5 @@
 seqlen=( 524288  )
-cp_size=( 32 )
+cp_size=( 32 8 ) # 32 is DoubleRing, 8 is USP 
 model_size=( "7b")
 export profile="false"
 export sele_ckpt=0
