@@ -4,8 +4,11 @@ model_size=( "7b")
 export profile="false"
 export sele_ckpt=0
 methods=( "loongtrain" )
-LOG_FILE=InternEvo/logs/7b_2048x.log
-tee_log=InternEvo/logs/7b_2048x_tee.log
+LOG_FILE=/InternEvo/logs/7b_2048x.log
+tee_log=/InternEvo/logs/7b_2048x_tee.log
+mkdir /InternEvo/logs
+echo $NCCL_IB_HCA
+echo "Launch exp"
 for cp in ${cp_size[@]}; do
   for i in ${seqlen[@]}; do
     for model in ${model_size[@]}; do
