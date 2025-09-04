@@ -2,10 +2,10 @@
 
 # sizes=( 1048576 2097152 )
 # sizes = ( 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 )
-sizes=( 131072 )
+sizes=( 1048576 )
 methods=(
-  # "burst_sl_loss_sl_ckpt"
   "burst"
+  # "burst"
   # "burst_sl_loss_whole_ckpt_sliding"
   # "burst_whole_ckpt"
   # "burst_sl_loss"
@@ -42,7 +42,7 @@ for method in ${methods[@]}; do
   for size in ${sizes[@]}; do
     for cp in 32; do
       export WORLD_SIZE=$((cp > 8 ? cp / 8 : 1))
-      size=$((32768 * cp))
+      # size=$((32768 * cp))
       # if [[ $size -eq 262144 && $cp -eq 8 ]]; then
       #   continue
       # fi

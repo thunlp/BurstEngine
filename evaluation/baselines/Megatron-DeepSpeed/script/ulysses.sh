@@ -163,7 +163,7 @@ train_tokens=$((${train_tokens_in_billion} * 1000000000))
 ## so we just set this config large enough to make sure we have enough
 ## processed data and don't terminate by train_samples.
 train_samples=$(( 300 * 1000000000 * 2 / ${seqlen} ))
-train_samples=$(( 4 * global_batch_size ))
+train_samples=$(( 100 * global_batch_size ))
 
 ## Another wall-clock time termination condition in minutes. Set it large
 ## enough to avoid undesired early termination.
@@ -310,7 +310,7 @@ megatron_options=" \
     --min-lr ${min_lr} \
     --zero-reduce-scatter \
     --lr-decay-style ${lr_decay_style} \
-    --split 949,50,1 \
+    --split 1,0,0 \
     --log-interval ${log_interval} \
     --eval-interval ${eval_interval} \
     --eval-iters ${eval_iters} \
@@ -402,6 +402,6 @@ if [[ $iteration -gt 0 ]]; then
     ds_ssh "echo $iteration_2 > $iteration_file_2"
 fi
 
-cmd="torchrun --nproc-per-node=${gpus} --nnodes ${WORLD_SIZE} --master-addr=${MASTER_ADDR} --master-port=12306 --rdzv-id=4 --rdzv-backend=c10d --rdzv-endpoint=${MASTER_ADDR}:12306 ../pretrain_gpt.py ${megatron_options} ${data_options} ${deepspeed_options} "
+cmd="torchrun --nproc-per-node=${gpus} --nnodes ${WORLD_SIZE} --rdzv-id=1 --rdzv-backend=c10d --rdzv-endpoint=${MASTER_ADDR}:7788 ../pretrain_gpt.py ${megatron_options} ${data_options} ${deepspeed_options} "
 echo $cmd
 $cmd 2>&1 | tee -a ${LOG_FILE}

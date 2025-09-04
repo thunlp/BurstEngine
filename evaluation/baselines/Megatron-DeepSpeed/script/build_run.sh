@@ -31,8 +31,15 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   -e MASTER_ADDR=$MASTER_ADDR \
   -e IS_WORKER=$IS_WORKER \
   -e LOG_FILE=$LOG_FILE \
+  -e CUDA_DEVICE_MAX_CONNECTIONS=$CUDA_DEVICE_MAX_CONNECTIONS \
+  -e UCX_NET_DEVICES=$UCX_NET_DEVICES \
+  -e GLOO_SOCKET_IFNAME=$GLOO_SOCKET_IFNAME \
+  -e NCCL_SOCKET_IFNAME=$NCCL_SOCKET_IFNAME \
+  -e NCCL_IB_HCA=$NCCL_IB_HCA \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
+  -v /shared/sc_workspace/BE/evaluation/baselines/Megatron-DeepSpeed:/Megatron-DeepSpeed \
+  -v $PROJECT_DIR/data:/data \
   --privileged=true \
   burst_engine:latest /bin/bash -c " \
   cd /Megatron-DeepSpeed/script \

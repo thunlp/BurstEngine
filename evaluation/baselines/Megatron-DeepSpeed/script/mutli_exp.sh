@@ -7,7 +7,7 @@ sizes=( 524288 )
 
 export NODES="g41 g47 g48 g71"
 export NODES="g47 g43 g74 g49"
-export NODES="bjdx1 bjdx2"
+export NODES="bjdx1 bjdx2 bjdx3 bjdx4"
 
 DOCKER_DIR=Megatron-DeepSpeed
 export WORLD_SIZE=4
