@@ -10,8 +10,8 @@ methods=(
   # "burst_ulysses"
   # "burst_double"
 )
-export CP_SIZE=4
-export TP_SIZE=8
+export CP_SIZE=32
+export TP_SIZE=1
 export NODES="bjdx1 bjdx2 bjdx3 bjdx4"
 DOCKER_DIR=Megatron-LM
 export MODEL="7b"
