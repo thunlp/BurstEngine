@@ -13,6 +13,7 @@ else
     NODES=$(echo $AVAIL|tr " " "\n" |tail -n $WORLD_SIZE|tr "\n" " " )
   fi
   # MASTER_ADDR=`echo $NODES | cut -d ' ' -f 1`
+  source $PROJECT_DIR/env.sh
   MASTER_ADDR=`ifconfig $NCCL_SOCKET_IFNAME|grep inet|awk '{print $2}'|head -n 1`
 
   echo "Used Nodes $NODES"

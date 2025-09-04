@@ -1,7 +1,6 @@
 #!/bin/bash
 MAX_RESTARTS=0
 export NCCL_IB_QPS_PER_CONNECTION=8
-export NCCL_IB_HCA=mlx5_0,mlx5_1,mlx5_2,mlx5_3,mlx5_4,mlx5_6,mlx5_7,mlx5_8
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 DATA_PATH="data/"
 DATASET="codeparrot_content_document"

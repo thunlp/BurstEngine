@@ -4,8 +4,6 @@ convert=0
 cd ../
 vocab_path="`pwd`/script/data/vocab.json"
 merge_path="`pwd`/script/data/merges.txt"
-export NCCL_IB_HCA=mlx5_0,mlx5_1,mlx5_2,mlx5_3,mlx5_4,mlx5_6,mlx5_7,mlx5_8
-export NCCL_P2P_DISABLE=1
 # data_path="./ckpt/alpaca_data.json"
 data_path="`pwd`/script/data/codeparrot_content_document"
 export CUDA_MAX_CONNECTIONS=1

@@ -8,7 +8,6 @@ nsys_cmd="nsys profile -s none -t nvtx,cuda -o ./burst_comm.nsys-rep --force-ove
 
 export LOG_FILE=/BurstEngine/apps/llama/13b_burst4nodes_1024k.log
 export NCCL_IB_QPS_PER_CONNECTION=8
-export NCCL_IB_HCA=mlx5_0,mlx5_1,mlx5_2,mlx5_3,mlx5_4,mlx5_6,mlx5_7,mlx5_8
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 export NCCL_MIN_NCHANNELS=4
 export NCCL_NCHANNELS_PER_NET_PEER=4
