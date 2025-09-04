@@ -2,9 +2,10 @@
 
 # sizes=( 1048576 2097152 )
 # sizes = ( 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216 33554432 67108864 134217728 268435456 )
-sizes=( 524288 )
+sizes=( 131072 )
 methods=(
-  "burst_sl_loss_sl_ckpt"
+  # "burst_sl_loss_sl_ckpt"
+  "burst"
   # "burst_sl_loss_whole_ckpt_sliding"
   # "burst_whole_ckpt"
   # "burst_sl_loss"

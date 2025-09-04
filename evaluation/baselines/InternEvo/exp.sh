@@ -1,6 +1,6 @@
-seqlen=( 2097152 )
-cp_size=( 8 )
-model_size=( "13b")
+seqlen=( 524288  )
+cp_size=( 32 )
+model_size=( "7b")
 export profile="false"
 export sele_ckpt=0
 methods=( "loongtrain" )
