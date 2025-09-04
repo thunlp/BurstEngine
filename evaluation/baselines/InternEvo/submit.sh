@@ -17,7 +17,8 @@ else
   echo "Used Nodes $NODES"
   echo "MASTER_ADDR: $MASTER_ADDR"
   echo "WORLD_SIZE: $WORLD_SIZE"
-  pdsh -R ssh -w "$NODES" "export LOG_FILE=$LOG_FILE;export MASTER_ADDR=$MASTER_ADDR;export WORLD_SIZE=$WORLD_SIZE; export CP_SIZE=$CP_SIZE;export HP_SIZE=$HP_SIZE; export sele_ckpt=$sele_ckpt; export MODEL=$MODEL; cd `pwd` && $1"
+  export MASTER_ADDR=`ifconfig $NCCL_SOCKET_IFNAME|grep inet|awk '{print $2}'|head -n 1`
+  pdsh -R ssh -w "$NODES" "export LOG_FILE=$LOG_FILE;export MASTER_ADDR=$MASTER_ADDR;export WORLD_SIZE=$WORLD_SIZE; export CP_SIZE=$CP_SIZE;export HP_SIZE=$HP_SIZE; export sele_ckpt=$sele_ckpt; export MODEL=$MODEL;export CUDA_DEVICE_MAX_CONNECTIONS=$CUDA_DEVICE_MAX_CONNECTIONS; export UCX_NET_DEVICES=$UCX_NET_DEVICES; export GLOO_SOCKET_IFNAME=$GLOO_SOCKET_IFNAME; export NCCL_SOCKET_IFNAME=$NCCL_SOCKET_IFNAME; export NCCL_IB_HCA=$NCCL_IB_HCA; cd `pwd` && $1"
   pdsh -R ssh -w "$NODES" "bash /home/test/test01/sa/kill.sh"
   pdsh -R ssh -w "$NODES" "docker stop $(docker ps -a -q)"
 

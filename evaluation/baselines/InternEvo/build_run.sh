@@ -33,7 +33,7 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
-  burst_engine:v1 /bin/bash -c " \
+  burst_engine:latest /bin/bash -c " \
   cd InternEvo \
   && bash pre.sh \
   && mkdir -p "$(dirname "$running_log")" \

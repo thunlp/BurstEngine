@@ -26,4 +26,4 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit memlock=-1 \
   --privileged=true \
   --ulimit stack=67108864  \
-  burst_engine:v1 /bin/bash 
+  burst_engine:latest /bin/bash 
