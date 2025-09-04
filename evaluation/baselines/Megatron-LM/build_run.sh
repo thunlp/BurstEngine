@@ -40,7 +40,6 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   -e GLOO_SOCKET_IFNAME=$GLOO_SOCKET_IFNAME \
   -e NCCL_SOCKET_IFNAME=$NCCL_SOCKET_IFNAME \
   -e NCCL_IB_HCA=$NCCL_IB_HCA \
-  -v $PROJECT_DIR/data:/data \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
