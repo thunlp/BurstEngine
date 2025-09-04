@@ -35,5 +35,5 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --ulimit stack=67108864  \
   --privileged=true \
   burst_engine:latest /bin/bash -c " \
-  cd Megatron-DeepSpeed/script \
+  cd /Megatron-DeepSpeed/script \
  && source /env.sh && bash ./ulysses.sh"

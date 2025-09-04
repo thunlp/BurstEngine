@@ -15,7 +15,7 @@ export LOG_FILE=$DOCKER_DIR/7b_2048k_vocab120k.log
 export MODEL="7b"
 echo $LOG_FILE
 touch $LOG_FILE
-sizes=( 2097152 )
+sizes=( 524288 )
 for size in ${sizes[@]}; do
   for cp in 32; do
     if [[ $size -eq 262144 && $cp -eq 16 ]]; then
