@@ -23,18 +23,22 @@ docker run ${run_arg} --log-driver=json-file -m 500G --rm  -u root --ipc=host \
   --shm-size="32g" \
   --net=host \
   --gpus all --ipc=host \
-  -v /home/test/test01/sa/workspace:/workspace/workspace  \
+  -v $PROJECT_DIR/evaluation/baselines/InternEvo:/InternEvo  \
   -e MASTER_ADDR=$MASTER_ADDR \
   -e WORLD_SIZE=$WORLD_SIZE \
   -e LOG_FILE=$LOG_FILE \
   -e MASTER_PORT=6000 \
   -e MASTER_ADDR=$MASTER_ADDR \
   -e IS_WORKER=$IS_WORKER \
+  -e CUDA_DEVICE_MAX_CONNECTIONS=$CUDA_DEVICE_MAX_CONNECTIONS \
+  -e UCX_NET_DEVICES=$UCX_NET_DEVICES \
+  -e GLOO_SOCKET_IFNAME=$GLOO_SOCKET_IFNAME \
+  -e NCCL_SOCKET_IFNAME=$NCCL_SOCKET_IFNAME \
   --ulimit memlock=-1 \
   --ulimit stack=67108864  \
   --privileged=true \
   burst_engine:latest /bin/bash -c " \
-  cd InternEvo \
+  cd /InternEvo \
   && bash pre.sh \
   && mkdir -p "$(dirname "$running_log")" \
   && echo 'hp $HP_SIZE cp $CP_SIZE seqlen $1 with ckpt $sele_ckpt' >> $running_log \
