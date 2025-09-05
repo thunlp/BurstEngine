@@ -7,7 +7,7 @@
 1. Execute command to clone the github repo
 
 ```bash
-git clone git@github.com:MayDomine/BE.git
+git clone git@github.com:MayDomine/BE.git # or https://github.com/MayDomine/BE.git, it's based on your network environment
 cd BE && git submodule update --init --recursive 
 ```
 

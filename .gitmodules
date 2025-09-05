@@ -1,7 +1,7 @@
 [submodule "flash-attention"]
 	path = flash-attention
-	url = git@github.com:MayDomine/flash-attention.git
+	url = https://github.com/MayDomine/flash-attention.git
 	branch = opt_bwd
 [submodule "ml-cross-entropy"]
 	path = ml-cross-entropy
-	url = git@github.com:MayDomine/ml-cross-entropy.git
+	url = https://github.com/MayDomine/ml-cross-entropy.git
