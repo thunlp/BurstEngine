@@ -1,155 +1,153 @@
+# BurstEngine: An Efficient Distributed Framework for Training Transformers on Extremely Long Sequences
 
-# Execution Guideline
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2403.09347)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+BurstEngine is a highly efficient distributed framework specifically designed for training transformer-based large language models (LLMs) and large multimodal models (LMMs) on extremely long sequences of over 1M tokens. It addresses the critical challenges of quadratic time and space complexities in attention mechanisms while achieving superior performance compared to existing state-of-the-art methods.
+
+## 🚀 Key Features
+
+### Core Optimizations
+
+- **BurstAttention**: A highly optimized distributed attention implementation with:
+  - **Backward Communication Optimization**: Reduces ~25% communication overhead compared to RingAttention
+  - **Topology-aware Ring Communication**: Maximizes network bandwidth utilization across intra-node and inter-node connections
+  - **Fine-grained Communication-Computation Overlap**: Minimizes overall communication overhead through specialized double buffer design
+
+- **Sequence-Level Selective Checkpointing**: Optimizes the trade-off between memory overhead and computation overhead at the sequence level
+
+- **Sequence-Level Fusion of LM Head and Loss Function**: Reduces memory overhead of storing intermediate states in language modeling head
+
+- **Sparse Attention Integration**: Supports various sparse attention patterns including causal masking, sliding-window masking, and block-wise sparse patterns
+
+### Performance Achievements
+
+- **1.2× speedup** over state-of-the-art baselines on extremely long sequences (>1M tokens)
+- **26.4% memory reduction** compared to most memory-efficient baselines
+- **Linear scaling** with the number of devices along the sequence dimension
+- **Support for sequences up to 4M tokens** on 64×A800 GPUs
 
 
-## Prepare the Docker image
+## 🛠️ Installation
 
-1. Execute command to clone the github repo
+### Prerequisites
 
+- Docker
+- CUDA-compatible GPUs
+- InfiniBand network (for multi-node training)
+- Shared storage accessible by all nodes
+
+### Docker-based Installation
+
+1. **Clone the repository:**
 ```bash
-git clone git@github.com:MayDomine/BE.git # or https://github.com/MayDomine/BE.git, it's based on your network environment
-cd BE && git submodule update --init --recursive 
+git clone https://github.com/your-org/BurstEngine.git
+cd BurstEngine
+git submodule update --init --recursive
 ```
 
-2. Set up the environment script 
-
-All related environment variables are stored in BE/env.sh, and the training script will automatically source this file upon launch to ensure they take effect.
+2. **Set up environment variables:**
+Create and configure `env.sh` with your network settings:
 ```bash
-export CUDA_DEVICE_MAX_CONNECTIONS=1 # you do not need to modify this.
+export CUDA_DEVICE_MAX_CONNECTIONS=1
 export UCX_NET_DEVICES=bond0
 export GLOO_SOCKET_IFNAME=bond0
 export NCCL_SOCKET_IFNAME=bond0
 export NCCL_IB_HCA="mlx5_2,mlx5_3,mlx5_5,mlx5_6"
 ```
 
-Above is an example for env.sh. You must replace all instances of "bond0" with your own `IFNAME`. You can use the `ifconfig` command to see all network interface names and select the one you use for torchrun's TCP handshake.
-
-```shell
-(base) root@node0:/working_dir# ifconfig
-bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
-        inet 10.0.2.12  netmask 255.255.255.0  broadcast 10.0.2.255
-
-# Node1  
-(base) root@node1:/working_dir# ifconfig
-bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
-        inet 10.0.2.13  netmask 255.255.255.0  broadcast 10.0.2.255
+**Important:** Replace `bond0` with your actual network interface name. Use `ifconfig` to check available interfaces:
+```bash
+ifconfig
 ```
-In this case, it means the node0 and node1 can communicate with each other by using `bond0` as the network interface. 
 
+**Example network configuration:**
+```bash
+# Node 0
+bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
+      inet 10.0.2.12  netmask 255.255.255.0  broadcast 10.0.2.255
 
-About `NCCL_IB_HCA`: You need to contact your hardware provider to ensure you set the correct value, as some InfiniBand HCAs are used for shared storage filesystems rather than program communication.
+# Node 1  
+bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
+      inet 10.0.2.13  netmask 255.255.255.0  broadcast 10.0.2.255
+```
 
-3. Build the image
+**Note:** Contact your hardware provider to ensure correct `NCCL_IB_HCA` values, as some InfiniBand HCAs are used for shared storage rather than program communication.
 
+3. **Build the Docker image:**
 ```bash
 docker build -t burst_engine:latest .
 ```
 
-4. Distribute the image
-
-Execute the command below on the machine where you built the image
-```bash 
-# /shared should be some shared storage/directory that can be assessed by all machines.
+4. **Distribute the image to all nodes:**
+On the build machine:
+```bash
 docker save burst_engine:latest > /shared/burst_engine.tar.gz
 ```
-Execute the command below on the machine where you want distribute the image
 
+On each target node:
 ```bash
 docker load -i /shared/burst_engine.tar.gz
 ```
 
+## 🚀 Quick Start
 
-## Running End-to-End Training experiment
+### Check Node Availability
 
-### BurstEngine
-
-1. Specify nodes that you want to run.
-
-    - check.sh provide a script to check if a gpu node available. 
-   
-    - You need to specify node number and prefix in check.sh.
-
-    - You can check hostname by using `cat /etc/hosts`, A output may like
-```
-bjdx1 10.0.2.1
-bjdx2 10.0.2.2
-bjdx3 10.0.2.3
-bjdx4 10.0.2.4
-```
-In this case `bjdx` is the node_prefix, and number list should be {1..4}
-
+Before running experiments, check which GPU nodes are available:
 ```bash
-node_prefix="bjdx" # check.sh:7
-...
-for i in  {1..4}; do #check.sh:71
-    node="${node_prefix}$i"
+# Modify check.sh to specify your node prefix and range
+node_prefix="bjdx"  # Replace with your node prefix
+# Check nodes bjdx1, bjdx2, bjdx3, bjdx4
+bash check.sh
 ```
-Then you can modify the check.sh and ensure that the script will check if `bjdx1,bjdx2,bjdx3,bjdx4` available.
 
-About settings related with training experiment, you need to modify `./BurstEngine/apps/llama/multi_exp.sh` to ensure the settings are what you want.
+### Running End-to-End Training
 
+1. **Configure your experiment:**
+Edit `code/BurstEngine/apps/llama/multi_exp.sh`:
 ```bash
 #!/bin/bash
 
-sizes=( 1048576 2097152 )
+sizes=( 1048576 2097152 )  # Sequence lengths to test
 methods=(
-  "burst"
+  "burst"  # BurstEngine method
 )
-ablation=(
-  "false"
-)
-export PROFILE="false"
-export NODES="bjdx1 bjdx2 bjdx3 bjdx4"
-export MODEL="7b"
-DOCKER_DIR=/BurstEngine/apps/llama
-export LOG_FILE=$DOCKER_DIR/sl_ckpt_exp.log
-echo $LOG_FILE
-for method in ${methods[@]}; do
-  for ablation in ${ablation[@]}; do
-  echo "Running method $method" >> summary.txt
-  for size in ${sizes[@]}; do
-    for cp in 32; do
-      export WORLD_SIZE=$((cp > 8 ? cp / 8 : 1))
-      export CP_SIZE=$cp
-      export ABLATION=$ablation
-      echo "Running size $size with method $method" >> summary.txt
-      bash ./submit.sh "bash build_run.sh $size $method " 
-      done
-    done
-  done
-done
+export NODES="bjdx1 bjdx2 bjdx3 bjdx4"  # Your node list
+export MODEL="7b"  # Model size
+export CP_SIZE=32  # Context parallel size
 ```
 
- In this case, the script will launch experiments using four nodes (32GPUs) and evaluate under 1M and 2M sequence lengths.
-2. Launch the End-to-End Training script.
-
-Set the env by using command below:
-
+2. **Set environment variables:**
 ```bash
 export PROJECT_DIR=/shared/sc_workspace/BE/
 ```
 
-Execute the script to launch multi node experiment.
+3. **Launch multi-node training:**
 ```bash
-cd BurstEngine/apps/llama && bash ./multi_exp.sh
+cd code/BurstEngine/apps/llama
+bash multi_exp.sh
 ```
 
-### Baselines
-1. Megatron-LM
+### Running Baselines
 
-     Entrypoint: `cd evaluation/baselines/Megatron-LM && bash multi_exp.sh`
+Compare BurstEngine with other methods:
 
-2. Megatron-DeepSpeed
+```bash
+# Megatron-LM
+cd evaluation/baselines/Megatron-LM && bash multi_exp.sh
 
-     Entrypoint: `cd evaluation/baselines/Megatron-DeepSpeed/script && bash mutli_exp.sh`
+# Megatron-DeepSpeed  
+cd evaluation/baselines/Megatron-DeepSpeed/script && bash multi_exp.sh
 
-3. Intern-Evo
+# Intern-Evo
+cd evaluation/baselines/InternEvo && bash multi_exp.sh
+```
 
-     Entrypoint: `cd evaluation/baselines/InternEvo bash multi_exp.sh`
+### Running Attention Benchmarks
 
-All entrypoint should be execute in the bare-metal machine instead of docker container since the entrypoint will use pdsh to launch docker image and execute the training script.
-
-
-## Running the benchmark of Distribtued Attention
-
-Entrypoint: `cd evaluation/kernel_bench/ && bash bench_all.sh`
+```bash
+cd evaluation/kernel_bench/
+bash bench_all.sh
+```
+If you want detail guidance for reproduction, please refer to [this](./HELP.md).
