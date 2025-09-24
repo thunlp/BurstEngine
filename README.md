@@ -1,6 +1,6 @@
 # BurstEngine: An Efficient Distributed Framework for Training Transformers on Extremely Long Sequences
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2403.09347)
+<!-- [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](wait) -->
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 BurstEngine is a highly efficient distributed framework specifically designed for training transformer-based large language models (LLMs) and large multimodal models (LMMs) on extremely long sequences of over 1M tokens. It addresses the critical challenges of quadratic time and space complexities in attention mechanisms while achieving superior performance compared to existing state-of-the-art methods.
